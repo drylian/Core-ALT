@@ -1,0 +1,7 @@
+module.exports = {
+  name: 'ready', // O nome do evento que será registrado
+  run: async (client) => {
+    // Seu código aqui
+  }
+};
+
