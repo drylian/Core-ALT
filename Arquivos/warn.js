@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed } = require('discord.js');
-const config = require('../config.json');
+const config = require('../Config/config.json');
 
 const tags = {
     '1/3': 'Aviso 1/3',

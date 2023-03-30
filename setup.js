@@ -1,7 +1,8 @@
-const config = require('./config.json');
+const config = require('./Config/config.json');
+const colors = require('colors');
 
 
-console.log("[ VERIFICADOR ] Iniciando verificação da config.json");
+console.log('[' + ' SETUP '.blue + `] Iniciando verificação da ${colors.yellow('config.json')}`);
 
 function checkConfig(obj, depth = 1, parentKeys = []) {
   for (const key in obj) {
@@ -13,14 +14,12 @@ function checkConfig(obj, depth = 1, parentKeys = []) {
       if (depth < 5) {
         checkConfig(value, depth + 1, keys);
       } else {
-        console.log(`[ VERIFICADOR ] "${name}" tem profundidade máxima de 5 subextensões.`);
+        console.log('[' + ' FAIL '.red + ']' + ` ${colors.yellow(name)} tem profundidade máxima de 5 subextensões.`);
       }
-    } else if (typeof value === "string" && value !== "") {
-      console.log(`[ VERIFICADOR ] "${name}" foi configurada com sucesso.`);
+    } else if (typeof value === "string" || typeof value === "boolean") {
+      console.log('[' + ' OK '.green + ']' + ` ${colors.yellow('config.' + name)}`);
     } else {
-      console.log(
-        `[ VERIFICADOR ] "${name}" não foi configurada no config.json. Iniciar novamente quando estiver tudo configurado.`
-      );
+      console.log('[' + ' FAIL '.red + ']' + ` ${colors.yellow(name)} Não está configurada, configure tudo antes de iniciar o bot!`);
       process.exit(1);
     }
   }
@@ -28,7 +27,7 @@ function checkConfig(obj, depth = 1, parentKeys = []) {
 
 checkConfig(config);
 
-console.log('[ VERIFICAÇÃO ] Todas as informações do config.json estão preenchidas!');
-console.log('[ VERIFICAÇÃO ] Iniciando configurações do bot...');
+console.log('[' + ' SETUP '.blue + '] Todas as informações do config.json estão preenchidas!');
+console.log('[' + ' SETUP '.blue + '] Iniciando configurações do bot...');
 
 require('./bot.js');

@@ -1,28 +1,85 @@
-const { Client, Intents, Collection } = require('discord.js');
+const { Client, Intents, Collection, MessageEmbed } = require('discord.js');
 const { readdirSync } = require('fs');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
-const { token, guildId, clientId } = require('./config.json');
+const { token, guildId, clientId } = require('./Config/config.json');
+const colors = require('colors');
+const lastCommandUsed = {};
+const fs = require('fs');
+const logDir = './Logs';
+
+if (!fs.existsSync(logDir)) {
+  console.log(`[${colors.magenta(' LOG ')}] Pasta Logs não existe, Criando uma.`);
+  fs.mkdirSync(logDir);
+}
+
+const commandLogStream = fs.createWriteStream(`${logDir}/Comandos.txt`, { flags: 'a' });
+const errorLogStream = fs.createWriteStream(`${logDir}/Erros.txt`, { flags: 'a' });
+const floodLogStream = fs.createWriteStream(`${logDir}/Flood.txt`, { flags: 'a' });
+
+// Função para registrar logs de comandos
+function logCommand(commandName, userId, userUsername, userDiscriminator) {
+  const logMessage = `[${new Date().toLocaleString()}] Comando Slash "/${commandName}" usado pelo usuário ${userUsername}#${userDiscriminator}(${userId})\n`;
+  commandLogStream.write(logMessage);
+}
+
+// Função para registrar logs de erros
+function logError(commandName, error) {
+  const logMessage = `[${new Date().toLocaleString()}] no Comando Slash "/${commandName}" , Erro: ${error.stack}\n`;
+  errorLogStream.write(logMessage);
+}
+
+// Função para registrar logs fatais
+function logFlood(commandName, userId, userUsername, userDiscriminator) {
+  const logMessage = `[${new Date().toLocaleString()}] Comando Slash "/${commandName}" floodado pelo usuário ${userUsername}#${userDiscriminator}(${userId})\n`;
+  floodLogStream.write(logMessage);
+}
 
 const client = new Client({
-  intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
+  intents: [
+    Intents.FLAGS.GUILDS,
+    Intents.FLAGS.GUILD_MEMBERS,
+    Intents.FLAGS.GUILD_BANS,
+    Intents.FLAGS.GUILD_EMOJIS_AND_STICKERS,
+    Intents.FLAGS.GUILD_INTEGRATIONS,
+    Intents.FLAGS.GUILD_WEBHOOKS,
+    Intents.FLAGS.GUILD_INVITES,
+    Intents.FLAGS.GUILD_VOICE_STATES,
+    Intents.FLAGS.GUILD_PRESENCES,
+    Intents.FLAGS.GUILD_MESSAGES,
+    Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
+    Intents.FLAGS.GUILD_MESSAGE_TYPING,
+    Intents.FLAGS.DIRECT_MESSAGES,
+    Intents.FLAGS.DIRECT_MESSAGE_REACTIONS,
+    Intents.FLAGS.DIRECT_MESSAGE_TYPING,
+  ],
 });
 
-console.log(`[ SLASH ] Iniciando Registro dos Comandos Slash.`);
+console.log(`[${colors.magenta(' SLASH ')}] Iniciando Comandos Slash.`);
 
 client.commands = new Collection();
 
-// Iterate over each folder in the Comandos directory
-const commandFolders = readdirSync('./SlashCommands');
-for (const folder of commandFolders) {
-  // Iterate over each file in the current folder
-  const commandFiles = readdirSync(`./SlashCommands/${folder}`).filter(file => file.endsWith('.js'));
+// Iterate over each folder in the SlashCommands directory
+const mainCategories = readdirSync('./SlashCommands', { withFileTypes: true })
+  .filter(dirent => dirent.isDirectory())
+  .map(dirent => dirent.name);
+
+for (const mainCategory of mainCategories) {
+  const commandFiles = readdirSync(`./SlashCommands/${mainCategory}`).filter(file => file.endsWith('.js'));
+  let commands = [];
   for (const file of commandFiles) {
-    const command = require(`./SlashCommands/${folder}/${file}`);
+    const command = require(`./SlashCommands/${mainCategory}/${file}`);
     client.commands.set(command.data.name, command);
-    command.category = folder;
-    console.log(`[ ${command.category} ] Comando Slash "${command.data.name}" foi registrado com sucesso.`);
+    command.category = mainCategory;
+    commands.push(command.data.name);
+    console.log(`[${colors.cyan(` ${mainCategory} `)}] Slash "${command.data.name}" iniciado.`);
   }
+
+  const commandsTotal = commands.length;
+  console.log(`${colors.blue('----------')}[${colors.magenta(` ${mainCategory} `)}]${colors.blue('----------')}
+[${colors.blue(' SLASH COMANDOS ')}] = ${commands.join(', ')}
+[${colors.blue(' SLASH TOTAL ')}] = ${commandsTotal}
+${colors.blue('------------------------------------------')}`);
 }
 
 const rest = new REST({ version: '9' }).setToken(token);
@@ -33,8 +90,7 @@ const rest = new REST({ version: '9' }).setToken(token);
     await rest.put(
       Routes.applicationGuildCommands(clientId, guildId),
       { body: commands },
-    );      
-    console.log('[ SLASH ] Os Comandos Slash foram registrados com sucesso, iniciando bot!');
+    );
   } catch (error) {
     console.error(error);
   }
@@ -48,23 +104,49 @@ client.on('interactionCreate', async (interaction) => {
 
   if (!command) return;
 
+  const currentTime = new Date().getTime();
+  const lastTime = lastCommandUsed[interaction.user.id] || 0;
+  const elapsedTime = (currentTime - lastTime) / 1000;
+
+  if (elapsedTime < 5) {
+    const remainingTime = Math.ceil(5 - elapsedTime);
+    logFlood(commandName, interaction.user.id, interaction.user.username, interaction.user.discriminator);
+    const embed = new MessageEmbed()
+      .setTitle('Comando usado muito rápido!')
+      .setDescription('Aguarde ``' + remainingTime + '`` segundos antes de usar outro comando!')
+      .setColor('#FF0000');
+    await interaction.reply({ embeds: [embed], ephemeral: true });
+    return;
+  }
+  
+
+  lastCommandUsed[interaction.user.id] = currentTime;
+
   try {
     await command.execute(interaction);
+    logCommand(commandName, interaction.user.id, interaction.user.username, interaction.user.discriminator);
   } catch (error) {
     console.error(error);
-    await interaction.reply({ content: 'Ocorreu um erro ao executar este comando!', ephemeral: true });
+    logError(commandName, error);
+    const embed = new MessageEmbed()
+      .setTitle('Erro ao usar o comando')
+      .setDescription(`Ocorreu um erro ao usar o comando, esse incidente foi registrado.`)
+      .setColor('#FF0000');
+    await interaction.reply({ embeds: [embed], ephemeral: true });
+    return;
   }
 });
 
-console.log(`[ INICIALIZADOR ] detectando scripts de Start.`);
 
-const startFiles = readdirSync('./Eventos/Start').filter(file => file.endsWith('.js'));
+
+
+console.log(`[${colors.blue(' BOT ')}] Iniciando eventos de inicialização.`);
+
+const startFiles = readdirSync('./Eventos/Iniciar').filter(file => file.endsWith('.js'));
 for (const file of startFiles) {
-  const event = require(`./Eventos/Start/${file}`);
-  console.log(`[ STARTFILES ] ${file} Detectado.`);
+  const event = require(`./Eventos/Iniciar/${file}`);
+  console.log(`[${colors.blue(' BOT ')}] ${colors.yellow(file)} iniciado.`);
   client.on(event.name, event.run.bind(null, client));
 }
-
-console.log(`[ FINALIZADO ] O Bot está pronto para ser usado.`);
 
 client.login(token);

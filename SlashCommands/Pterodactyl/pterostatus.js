@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed, MessageActionRow, MessageButton } = require('discord.js');
-const config = require('../../config.json');
+const config = require('../../Config/config.json');
 const { format } = require('date-fns');
 const axios = require('axios');
 
@@ -98,11 +98,11 @@ module.exports = {
                     const ramMaxGB = node.memory_max / 1024;
                     embed.addFields(
                         { name: `Node ${node.id}`, value: `**${node.name}**` },
-                        { name: 'Servidores', value: `${node.total_servers}` },
-                        { name: 'Espaço de armazenamento', value: `${storageMinGB.toFixed(2)}GB / ${storageMaxGB.toFixed(2)}GB` },
-                        { name: 'RAM', value: `${ramMinGB.toFixed(2)}GB / ${ramMaxGB.toFixed(2)}GB` },
-                        { name: 'Localização', value: `${node.location}` },
-                        { name: 'Está em Manutenção?', value: node.maintenance ? 'Sim' : 'Não' }
+                        { name: '```Servidores```', value: `${node.total_servers}` },
+                        { name: '```Espaço de armazenamento```', value: `${storageMinGB.toFixed(2)}GB / ${storageMaxGB.toFixed(2)}GB` },
+                        { name: '```RAM```', value: `${ramMinGB.toFixed(2)}GB / ${ramMaxGB.toFixed(2)}GB` },
+                        { name: '```Localização```', value: `${node.location}` },
+                        { name: '```Está em Manutenção?```', value: node.maintenance ? 'Sim' : 'Não' }
                     );
                 });
                 

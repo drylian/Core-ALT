@@ -1,4 +1,4 @@
-const config = require('./config.json');
+const config = require('./Config/config.json');
 
 console.log("[ VERIFICADOR ] Iniciando verificação da config.json");
 
@@ -18,7 +18,7 @@ function checkConfig(obj, depth = 1, parentKeys = []) {
       console.log(`[ VERIFICADOR ] "${name}" foi configurada com sucesso.`);
     } else {
       console.log(
-        `[ VERIFICADOR ] "${name}" não foi configurada no config.json. Iniciar novamente quando estiver tudo configurado.`
+        `[ VERIFICADOR ] "${name}" não foi configurada no config.json. Inicie novamente quando estiver tudo configurado.`
       );
       process.exit(1);
     }

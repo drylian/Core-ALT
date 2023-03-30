@@ -1,7 +1,0 @@
-Mute: comando que permite silenciar um usuário no servidor, impedindo-o de enviar mensagens ou falar em canais de voz por um tempo determinado.
-Tempmute: comando semelhante ao mute, porém com um tempo determinado para que o usuário seja desmutado automaticamente.
-Warn: comando que permite dar um aviso a um usuário por comportamento inadequado.
-Tempban: comando que permite banir um usuário por um tempo determinado.
-Slowmode: comando que permite definir um tempo mínimo entre as mensagens enviadas em um canal.
-Lockdown: comando que permite trancar um canal, impedindo que qualquer usuário envie mensagens nele.
-Nuke: comando que permite apagar todas as mensagens de um canal e reiniciá-lo do zero.

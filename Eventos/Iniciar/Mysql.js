@@ -1,6 +1,6 @@
 const mysql = require('mysql2/promise');
-const config = require('../../config.json');
-const database = require('../Data/database');
+const Config = require('../../Config/config.json');
+const database = require('../Database/database');
 
 module.exports = {
   name: 'ready',
@@ -9,11 +9,11 @@ module.exports = {
       console.log('[ MYSQL ] Carregando...');
 
       const connection = await mysql.createConnection({
-        host: config.database.host,
-        user: config.database.username,
-        password: config.database.password,
-        database: config.database.database,
-        port: config.database.port
+        host: Config.Iniciar.Mysql.host,
+        user: Config.Iniciar.Mysql.username,
+        password: Config.Iniciar.Mysql.password,
+        database: Config.Iniciar.Mysql.database,
+        port: Config.Iniciar.Mysql.port
       });
 
       await connection.ping();

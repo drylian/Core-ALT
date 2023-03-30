@@ -1,0 +1,59 @@
+const { MessageEmbed } = require('discord.js');
+const { setIntervalAsync } = require('set-interval-async/fixed');
+const axios = require('axios');
+const config = require('../../Config/config.json');
+const crypto = require('../../Config/crypto.json');
+const { format } = require('date-fns');
+const fromDate = format(new Date(), 'yyyy-MM-dd');
+const toDate = format(new Date(), 'yyyy-MM-dd');
+const cryptomoedasList = crypto.cryptomoedas.split(',');
+const tempo = parseInt(crypto.polygon.timer);
+const polygonKey = crypto.polygon.key;
+const canalAviso = crypto.polygon.canalaviso;
+const iforcarelativa = crypto.polygon.iforcarelativa;
+const ifluxocaixa = crypto.polygon.ifluxocaixa;
+
+module.exports = {
+    name: 'ready',
+    run: async (client) => {
+        setIntervalAsync(async () => {
+            if (cryptomoedasList.length === 0) return;
+
+            const currentCryptomoeda = cryptomoedasList.shift();
+            cryptomoedasList.push(currentCryptomoeda);
+
+            try {
+                const cashflow = await axios.get(`https://api.polygon.io/v2/aggs/ticker/${currentCryptomoeda}/range/1/hour/${fromDate}/${toDate}?adjusted=true&sort=asc&limit=120&apiKey=${polygonKey}`);
+                const rsi = await axios.get(`https://api.polygon.io/v2/aggs/ticker/${currentCryptomoeda}/range/1/hour/${fromDate}/${toDate}?adjusted=true&sort=asc&limit=120&type=rsi&timePeriod=14&apiKey=${polygonKey}`);
+
+                const currentCashflow = cashflow.results[cashflow.results.length - 1];
+                const currentRsi = rsi.results[rsi.results.length - 1];
+
+                if (currentCashflow.c === null || currentRsi.c === null) {
+                    throw new Error(`Índice de fluxo de caixa ou índice de força relativa inválidos para ${currentCryptomoeda}`);
+                }
+
+                if (currentCashflow.c <= iforcarelativa || currentRsi.c >= ifluxocaixa) {
+                    const embed = new MessageEmbed()
+                        .setTitle(`${currentCryptomoeda} está perto da sua marca definida`)
+                        .setDescription('Atualmente, está em um bom momento para comprar ou vender')
+                        .setThumbnail(config.Logo)
+                        .addFields(
+                            { name: 'Indice de Fluxo de Caixa', value: currentCashflow.c, inline: true },
+                            { name: 'Indice de Força Relativa', value: currentRsi.c, inline: true },
+                        )
+                        .setFooter({
+                            text: `IFC=Indice de Fluxo de Caixa | IFR=Indice de Força Relativa`,
+                            iconURL: crypto.icon,
+                        })
+                        .setColor('GREEN');
+
+                    client.channels.cache.get(canalAviso).send({ embeds: [embed] });
+                }
+            } catch (err) {
+                console.error(`[ BOT CRYPTO ] Ocorreu um erro ao verificar ${currentCryptomoeda}: ${err.message}`);
+                console.error(`https://api.polygon.io/v2/aggs/ticker/${currentCryptomoeda}/range/1/hour/${fromDate}/${toDate}?adjusted=true&sort=asc&limit=120&apiKey=${polygonKey}`)
+            }
+        }, tempo);
+    },
+};
