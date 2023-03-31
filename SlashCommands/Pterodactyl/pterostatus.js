@@ -7,7 +7,7 @@ const axios = require('axios');
 
 const now = new Date();
 const date = format(now, "'hoje, às' HH:mm 'do dia' dd 'de' MMMM", {
-  locale: require('date-fns/locale/pt-BR'),
+    locale: require('date-fns/locale/pt-BR'),
 });
 
 const token = config.pterodactyl.token;
@@ -75,8 +75,8 @@ module.exports = {
                 .setThumbnail(config.Logo)
                 .setImage(config.footer.image)
                 .setFooter({
-                text: (date),
-                iconURL: (config.footer.icon),
+                    text: (date),
+                    iconURL: (config.footer.icon),
                 });
 
             // Gerar uma cor aleatória
@@ -85,10 +85,10 @@ module.exports = {
             // Definir a cor do embed como a cor aleatória gerada
             embed.setColor(`#${randomColor}`);
             const button = new MessageButton()
-            .setStyle('LINK')
-            .setLabel('Acessar o Painel')
-            .setURL(config.pterodactyl.link);
-          const row = new MessageActionRow().addComponents(button);
+                .setStyle('LINK')
+                .setLabel('Acessar o Painel')
+                .setURL(config.pterodactyl.link);
+            const row = new MessageActionRow().addComponents(button);
             // Adicionar informações dos nodes ao embed
             nodeStats.then((data) => {
                 data.forEach((node) => {
@@ -104,11 +104,12 @@ module.exports = {
                         { name: '```Localização```', value: `${node.location}` },
                         { name: '```Está em Manutenção?```', value: node.maintenance ? 'Sim' : 'Não' }
                     );
-                });
-                
+                }
+                );
+
 
                 // Enviar o embed com as informações dos nodes
-                interaction.reply({ embeds: [embed], components: [row]  });
+                interaction.reply({ embeds: [embed], components: [row] });
             }).catch((err) => {
                 console.error(err);
                 interaction.reply('Ocorreu um erro ao obter as informações dos nodes.');

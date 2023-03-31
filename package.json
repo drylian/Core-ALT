@@ -13,8 +13,12 @@
     "discord.js": "^13.14.0",
     "fs": "^0.0.1-security",
     "fuse.js": "^6.6.2",
+    "lmadactyl": "^1.2.8",
+    "mercadopago": "^0.0.6",
     "mysql2": "^3.2.0",
+    "randomstring": "^1.2.3",
     "set-interval-async": "^3.0.3",
+    "simpl.db": "^2.12.1",
     "ytdl-core": "^4.11.2"
   },
   "scripts": {

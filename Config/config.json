@@ -17,8 +17,15 @@
   },
   "pterodactyl": {
     "url": "https://painel.alternight.ml",
-    "token": "ptla_DgXTjF3v9jeba86mBqJdyu1Udz5NQL0P0DfPUU9GAod",
-    "link": "https://painel.alternight.ml"
+    "token": "ptla_O2juGueHwD5JJovt5vguvMbJWU4tylhRcA2DZLmpmwq",
+    "link": "https://painel.alternight.ml",
+    "registercategory": "1090977688505823303",
+    "CreateServerNodeID": "1"
+  },
+  "emoji": {
+    "alert": "<:3360alert:1090983580395651232>",
+    "check": "<:8308checkmark1:1091045783136112670>",
+    "server": "<:8308checkmark1:1091045783136112670>"
   },
   "guildId": "925837612000903251",
   "guildname": "Alternight",

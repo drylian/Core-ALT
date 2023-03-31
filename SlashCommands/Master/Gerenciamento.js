@@ -16,7 +16,7 @@ const token = config.pterodactyl.token;
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('mst-servidores')
+        .setName('dashboard')
         .setDescription('Ação Mestre sobre os Servidores do painel.')
         .addSubcommand((subcommand) =>
             subcommand
@@ -137,7 +137,7 @@ if (command === 'lista') {
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-if (command === 'deletar') {
+else if (command === 'deletar') {
 const serverId = interaction.options.getString('servidor');
 const urlServer = `${url}/api/application/servers/${serverId}`;
 const serverData = await axios.get(urlServer, {
@@ -185,7 +185,7 @@ if (interaction) {
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-if (command === 'suspender') {
+else if (command === 'suspender') {
             const serverId = interaction.options.getString('servidor');
             const urlServer = `${url}/api/application/servers/${serverId}`;
             const serverData = await axios.get(urlServer, {
@@ -236,6 +236,7 @@ if (command === 'suspender') {
                 if (interaction) {
                     interaction.reply({ embeds: [embedSuspended] });
                   } else {
+                   
                     console.log('A interação não está mais disponível');
                   }
 
