@@ -22,8 +22,7 @@
     "ytdl-core": "^4.11.2"
   },
   "scripts": {
-    "direct": "node bot.js",
-    "start": "node setup.js",
+    "direct": "node index.js",
     "init": "npm i && node setup.js"
   },
   "author": "Drylian"

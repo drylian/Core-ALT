@@ -1,0 +1,46 @@
+{
+  "token": "MTAwMDk4NjQ5NTcwNTk0ODIxMg.Go5sPY.qWp21rgN-zE7cRkVYL25GbV_uYgH5SfZCGWn6M",
+  "Master": "428660430412709889",
+  "Iniciar": {
+    "Status": {
+      "Mensagens": "Em desenvolvimento.,Criado por Drylian.,Venha para Alternight.,Painel Alternight em criação.",
+      "Type": "PLAYING,WATCHING,LISTENING,PLAYING",
+      "Tempo": "180000"
+    },
+    "Mysql": {
+      "host": "192.168.0.160",
+      "username": "u11_fG7mBBuNwJ",
+      "password": "sqcsieA^f++TVEBfMNg^NNjK",
+      "database": "s11_Alternightbot",
+      "port": "3306"
+    }
+  },
+  "pterodactyl": {
+    "url": "https://painel.alternight.ml",
+    "token": "ptla_5ojQO8iPcjLcheXaUgZPedGVZny87aqTQ2yMbyIO1Wc",
+    "link": "https://painel.alternight.ml",
+    "registercategory": "1090977688505823303",
+    "CreateServerNodeID": "1"
+  },
+  "emoji": {
+    "alert": "<:3360alert:1090983580395651232>",
+    "check": "<:8308checkmark1:1091045783136112670>",
+    "server": "<:8308checkmark1:1091045783136112670>"
+  },
+  "guildId": "925837612000903251",
+  "guildname": "Alternight",
+  "clientId": "1000986495705948212",
+  "Logo": "https://cdn.discordapp.com/attachments/1033486312956768336/1086420783477297203/logo-alternight.png",
+  "footer": {
+    "icon": "https://cdn.discordapp.com/attachments/1033486312956768336/1086420783477297203/logo-alternight.png",
+    "image": "https://cdn.discordapp.com/attachments/1033486312956768336/1087122572342206524/Alternight_txt.png"
+  },
+  "Info": {
+    "Name": "Alternight",
+    "Dono": "ΩDrylian_BR/[16198]#5347",
+    "ID": "925837612000903251",
+    "Website": "https://www.alternight.ml",
+    "Painel": "https://painel.alternight.ml/",
+    "Desc": "Alternight Servers um projeto um tanto quanto bizarro."
+  }
+}

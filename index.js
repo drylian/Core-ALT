@@ -1,0 +1,1 @@
+require('./Index/bot.js');
