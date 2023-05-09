@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed } = require('discord.js');
-const config = require('../../Config/config.json');
+const { config } = require('../../../Settings');
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -24,7 +24,6 @@ module.exports = {
                     .setColor('YELLOW')
                     .setDescription('Você não pode se expulsar do servidor.')
                     .setThumbnail(config.Logo);
-                console.log(`[ AVISO ] ${interaction.user.username}#${interaction.user.discriminator} tentou Expulsar ${member.user.tag} que tem cargo maior que ele`);
                 return await interaction.reply({ embeds: [embed], ephemeral: true });
             }
 
@@ -33,7 +32,6 @@ module.exports = {
                     .setColor('RED')
                     .setDescription('Não foi possível expulsar o usuário.')
                     .setThumbnail(config.Logo);
-                console.log(`[ ERRO ] Erro ao Expulsar Usuário "${member.user.tag}" com o Slash /kick.`);
                 return await interaction.reply({ embeds: [embed], ephemeral: true });
             }
 
@@ -49,7 +47,6 @@ module.exports = {
                         { name: 'Data e Hora', value: new Date().toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo' }) }
                     )
                     .setThumbnail(config.Logo);
-                console.log(`[ SLASH ] ${interaction.user.username}#${interaction.user.discriminator} Explusou o(a) ${member.user.tag} com o Slash /kick.`);
                 await interaction.reply({ embeds: [embed] });
             } catch (error) {
                 console.error(error);
@@ -64,7 +61,6 @@ module.exports = {
                 .setColor('YELLOW')
                 .setDescription('Usuário inválido.')
                 .setThumbnail(config.Logo);
-                console.log(`[ ERRO ] Erro no comando Slash /kick.`);
             await interaction.reply({ embeds: [embed], ephemeral: true });
         }
     },

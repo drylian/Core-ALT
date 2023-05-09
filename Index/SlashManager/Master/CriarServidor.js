@@ -6,14 +6,14 @@ const client = require('../../bot'); // importar o objeto client
 const { Database } = require("simpl.db");
 const path = "../../database.json"; // caminho para o arquivo de banco de dados
 client.db = new Database(path);
-const config = require('../../Config/config.json');
+const { config } = require('../../../Settings');
 const ptero = require('lmadactyl')
 const { format } = require('date-fns');
 const now = new Date();
 const date = format(now, "'hoje, às' HH:mm 'do dia' dd 'de' MMMM", {
     locale: require('date-fns/locale/pt-BR'),
 });
-const token = config.pterodactyl.token;
+const token = config.Slash.pterodactyl.token;
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -21,15 +21,15 @@ module.exports = {
         .setDescription('Cria um servidor gratuito'),
     async execute(interaction) {
 
-        const createServerNodeID = parseInt(config.pterodactyl.CreateServerNodeID);
+        const createServerNodeID = parseInt(config.Slash.pterodactyl.CreateServerNodeID);
 
 
         const api = axios.create({
-            baseURL: config.pterodactyl.url,
+            baseURL: config.Slash.pterodactyl.url,
             headers: {
                 'Authorization': `Bearer ${token}`,
                 'Content-Type': 'application/json',
-                'Accept': 'Application/vnd.pterodactyl.v1+json',
+                'Accept': 'Application/vnd.Slash.pterodactyl.v1+json',
             },
         });
         
@@ -134,7 +134,7 @@ module.exports = {
                         .setStyle('LINK')
                         .setEmoji('963592169061490758')
                         .setLabel('Acessar o Painel')
-                        .setURL(config.pterodactyl.link),
+                        .setURL(config.Slash.pterodactyl.link),
                 )
             const actionRow = new MessageActionRow().addComponents(selectMenu);
 
@@ -198,7 +198,7 @@ module.exports = {
                     bot = ({ "name": `[BOT-DENO] - (${interaction.user.username})`, "user": client.db.get(`id.${interaction.user.id}`), "egg": 24, "docker_image": "quay.io/yajtpg/pterodactyl-images:deno-1.17.1", "startup": '/start.sh', "limits": { "memory": 100, "swap": -1, "disk": 1024, "io": 500, "cpu": 50 }, "environment": { "STARTUP_CMD": "oi.dn", "SECOND_CMD": "oi2.dn", "USER_UPLOAD": "1", "AUTO_UPDATE": "1" }, "feature_limits": { "databases": 1, "allocations": 1, "backups": 10 }, "deploy": { "locations": [1], "dedicated_ip": false, "port_range": [] }, "start_on_completion": true, "oom_disabled": true })
                 };
 
-                const response = await ptero.application.createServer(config.pterodactyl.link, config.pterodactyl.token, bot)
+                const response = await ptero.application.createServer(config.Slash.pterodactyl.link, config.Slash.pterodactyl.token, bot)
 
                 if (response.error) {
                     return interaction.editReply({

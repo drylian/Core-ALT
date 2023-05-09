@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed } = require('discord.js');
-const config = require('../../Config/config.json');
+const { config } = require('../../../Settings');
 
 module.exports = {
   data: new SlashCommandBuilder()
@@ -49,7 +49,6 @@ module.exports = {
 
     try {
       await interaction.channel.bulkDelete(messages, true);
-      console.log(`[ CLEAR ] ${numMessages} mensagens foram limpas no canal ${interaction.channel.name} pelo usuário ${interaction.user.tag}`);
       const successEmbed = new MessageEmbed()
         .setTitle('Chat limpo')
         .setDescription(`Foram limpas ${numMessages} mensagens no canal ${interaction.channel.toString()} por ${interaction.user.toString()}.`)

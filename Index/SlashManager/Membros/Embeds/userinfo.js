@@ -14,6 +14,5 @@ module.exports = (member) => {
         .setThumbnail(user.avatarURL({ dynamic: true }))
         .setTimestamp();
 
-        console.log(`[ 🟢   ]Comando Slash /userinfo foi executado, informações de:${member.user.tag}`);
-    return embed;
+        return embed;
 };

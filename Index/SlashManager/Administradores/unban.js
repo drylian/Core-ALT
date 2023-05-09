@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed } = require('discord.js');
-const config = require('../../Config/config.json');
+const { config } = require('../../../Settings');
 
 module.exports = {
   data: new SlashCommandBuilder()
@@ -26,7 +26,6 @@ module.exports = {
       // Verificar se o usuário a ser desbanido está realmente banido
       const bans = await interaction.guild.bans.fetch();
       if (!bans.has(userID)) {
-        console.log(`[ UNBAN ]Usuário ${interaction.user} tentou desbanir um usuário que não está banido.`);
         const embed = new MessageEmbed()
           .setTitle('Erro')
           .setDescription('O usuário especificado não está banido.')
@@ -37,7 +36,6 @@ module.exports = {
 
       // Verificar se o ID do usuário é válido
       if (isNaN(userID)) {
-        console.log(`[ UNBAN ] Usuário ${interaction.user} tentou desbanir um usuário com um ID inválido.`);
         const embed = new MessageEmbed()
           .setTitle('Erro')
           .setDescription('O ID do usuário especificado é inválido.')
@@ -56,10 +54,8 @@ module.exports = {
 
       // Desbanir o usuário
       await interaction.guild.members.unban(userID, { reason });
-      console.log(`[ UNBAN ] Usuário ${userID} foi desbanido por ${interaction.user.id} por ${reason}`);
     } catch (error) {
       console.error(error);
-      console.log(`[ ERRO > UNBAN ] Ocorreu um erro ao desbanir o usuário ${interaction.user.id}.`);
       const embed = new MessageEmbed()
         .setTitle('Erro')
         .setDescription('Ocorreu um erro ao desbanir o usuário.')

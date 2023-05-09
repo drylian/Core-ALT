@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed } = require('discord.js');
-const config = require('../../Config/config.json');
+const { config } = require('../../../Settings');
 
 module.exports = {
   data: new SlashCommandBuilder()
@@ -13,7 +13,6 @@ module.exports = {
     ),
   async execute(interaction) {
     if (!interaction.member.permissions.has('MANAGE_CHANNELS')) {
-      console.log(`[ COMANDO > AVISO ] ${interaction.user.tag} tentou executar o comando sem a permissão necessária.`);
       const embed = new MessageEmbed()
         .setColor('RED')
         .setTitle('Erro')
@@ -26,7 +25,6 @@ module.exports = {
     const reason = interaction.options.getString('reason') || 'sem motivo';
 
     if (!channel.permissionsFor(interaction.guild.roles.everyone).has('SEND_MESSAGES')) {
-      console.log(`[ COMANDO > AVISO ] ${interaction.user.tag} tentou executar o comando no canal ${channel.name} que já está bloqueado.`);
       const embed = new MessageEmbed()
         .setColor('YELLOW')
         .setTitle('Aviso')
@@ -40,8 +38,6 @@ module.exports = {
     } else {
       await channel.permissionOverwrites.edit(interaction.guild.roles.everyone, { SEND_MESSAGES: false });
     }
-
-    console.log(`[ COMANDO ] ${interaction.user.tag} executou o comando /lock no canal ${channel.name}.`);
 
     const embed = new MessageEmbed()
       .setColor('GREEN')

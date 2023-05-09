@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed, MessageActionRow, MessageButton } = require('discord.js');
-const config = require('../../Config/config.json');
+const { config } = require('../../../Settings');
 const { format } = require('date-fns');
 const axios = require('axios');
 
@@ -10,8 +10,8 @@ const date = format(now, "'hoje, às' HH:mm 'do dia' dd 'de' MMMM", {
     locale: require('date-fns/locale/pt-BR'),
 });
 
-const token = config.pterodactyl.token;
-const application = config.pterodactyl.url + '/api/application/';
+const token = config.Slash.pterodactyl.token;
+const application = config.Slash.pterodactyl.url + '/api/application/';
 
 const nodeStats = new Promise((resolve, reject) => {
     axios(application + 'nodes?include=servers,location,allocations', {
@@ -87,7 +87,7 @@ module.exports = {
             const button = new MessageButton()
                 .setStyle('LINK')
                 .setLabel('Acessar o Painel')
-                .setURL(config.pterodactyl.link);
+                .setURL(config.Slash.pterodactyl.link);
             const row = new MessageActionRow().addComponents(button);
             // Adicionar informações dos nodes ao embed
             nodeStats.then((data) => {

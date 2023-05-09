@@ -1,8 +1,7 @@
 const { MessageEmbed } = require('discord.js');
 const { setIntervalAsync } = require('set-interval-async/fixed');
 const axios = require('axios');
-const config = require('../../Config/config.json');
-const crypto = require('../../Config/crypto.json');
+const { config,crypto } = require('../../../Settings');
 const { format } = require('date-fns');
 const fromDate = format(new Date(), 'yyyy-MM-dd');
 const toDate = format(new Date(), 'yyyy-MM-dd');

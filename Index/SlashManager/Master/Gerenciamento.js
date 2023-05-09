@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed, MessageActionRow, MessageButton } = require('discord.js');
-const config = require('../../Config/config.json');
+const { config } = require('../../../Settings');
 const axios = require('axios');
 const { format } = require('date-fns');
 
@@ -10,8 +10,8 @@ const date = format(now, "'hoje, às' HH:mm 'do dia' dd 'de' MMMM", {
   locale: require('date-fns/locale/pt-BR'),
 });
 
-const url = config.pterodactyl.url;
-const token = config.pterodactyl.token;
+const url = config.Slash.pterodactyl.url;
+const token = config.Slash.pterodactyl.token;
 
 
 module.exports = {
@@ -97,7 +97,7 @@ if (command === 'lista') {
         headers: {
             'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json',
-            'Accept': 'Application/vnd.pterodactyl.v1+json',
+            'Accept': 'Application/vnd.Slash.pterodactyl.v1+json',
         },
         });
 
@@ -127,7 +127,7 @@ if (command === 'lista') {
         const button = new MessageButton()
         .setStyle('LINK')
         .setLabel('Acessar o Painel')
-        .setURL(config.pterodactyl.link);
+        .setURL(config.Slash.pterodactyl.link);
         embed.setColor(`#${randomColor}`);
 
         const row = new MessageActionRow().addComponents(button);
@@ -144,7 +144,7 @@ const serverData = await axios.get(urlServer, {
 headers: {
     Authorization: `Bearer ${token}`,
     'Content-Type': 'application/json',
-    Accept: 'Application/vnd.pterodactyl.v1+json',
+    Accept: 'Application/vnd.Slash.pterodactyl.v1+json',
     },
 });
 
@@ -162,7 +162,7 @@ await axios.delete(urlServer, {
 headers: {
     Authorization: `Bearer ${token}`,
     'Content-Type': 'application/json',
-    Accept: 'Application/vnd.pterodactyl.v1+json',
+    Accept: 'Application/vnd.Slash.pterodactyl.v1+json',
     },
 });
 
@@ -192,7 +192,7 @@ else if (command === 'suspender') {
                 headers: {
                     Authorization: `Bearer ${token}`,
                     'Content-Type': 'application/json',
-                    Accept: 'Application/vnd.pterodactyl.v1+json',
+                    Accept: 'Application/vnd.Slash.pterodactyl.v1+json',
                 },
             });
 
@@ -214,7 +214,7 @@ else if (command === 'suspender') {
                     headers: {
                         'Authorization': `Bearer ${token}`,
                         'Content-Type': 'application/json',
-                        'Accept': 'Application/vnd.pterodactyl.v1+json',
+                        'Accept': 'Application/vnd.Slash.pterodactyl.v1+json',
                       },
                 });
 
@@ -249,7 +249,7 @@ else if (command === 'suspender') {
                 headers: {
                     Authorization: `Bearer ${token}`,
                     'Content-Type': 'application/json',
-                    Accept: 'Application/vnd.pterodactyl.v1+json',
+                    Accept: 'Application/vnd.Slash.pterodactyl.v1+json',
                 },
             });
 
@@ -270,7 +270,7 @@ else if (command === 'suspender') {
                     headers: {
                         'Authorization': `Bearer ${token}`,
                         'Content-Type': 'application/json',
-                        'Accept': 'Application/vnd.pterodactyl.v1+json',
+                        'Accept': 'Application/vnd.Slash.pterodactyl.v1+json',
                       },
                 });
 

@@ -19,7 +19,6 @@ module.exports = {
     
     // Verifica se o usuário que executou o comando tem permissão para banir usuários
     if (!interaction.member.permissions.has('BAN_MEMBERS')) {
-      console.log(`[ ⚠️   ] ${interaction.user.username}#${interaction.user.discriminator} tentou banir ${user.username}#${user.discriminator} sem ter permissão.`);
       return interaction.reply({ content: 'Você não tem permissão para banir usuários!', ephemeral: true });
     }
     
@@ -27,7 +26,6 @@ module.exports = {
     const botMember = interaction.guild.members.me;
     const userMember = await interaction.guild.members.fetch(user.id);
     if (!botMember.permissions.has('BAN_MEMBERS') || botMember.roles.highest.comparePositionTo(userMember.roles.highest) <= 0) {
-        console.log(`[ ⚠️   ] ${interaction.user.username}#${interaction.user.discriminator} tentou banir ${user.username}#${user.discriminator} que tem um cargo superior.`);
         return interaction.reply({ content: 'Eu não tenho permissão para banir usuários com cargo superior ao meu!', ephemeral: true });
     }  
     
@@ -45,8 +43,6 @@ module.exports = {
           { name: 'Motivo', value: reason },
           { name: 'Data e Hora', value: new Date().toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo' }) }
         );
-
-      console.log(`[ 🟢   ] ${interaction.user.username}#${interaction.user.discriminator} baniu o(a) ${user.username}#${user.discriminator} com o Slash /ban.`);
 
       const logsChannel = interaction.guild.channels.cache.find(channel => channel.name === 'logs');
       if (logsChannel) {

@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed } = require('discord.js');
-const config = require('../../Config/config.json');
+const { config } = require('../../../Settings');
 
 module.exports = {
   data: new SlashCommandBuilder()
@@ -9,7 +9,6 @@ module.exports = {
   async execute(interaction) {
     // Verifica se o usuário tem permissão para executar o comando
     if (!interaction.member.permissions.has('SEND_MESSAGES')) {
-      console.log(`[ WASH > AVISO ] O ${interaction.user.tag} tentou executar o comando sem a permissão necessária.`);
       const errorEmbed = new MessageEmbed()
         .setTitle('Erro ao executar comando')
         .setDescription('Você não tem permissão para executar esse comando.')
@@ -32,10 +31,8 @@ module.exports = {
 
     try {
       await interaction.reply({ embeds: [embed] });
-      console.log(`[ WASH ] ${interaction.user.tag} executou o comando /wash.`);
     } catch (error) {
       if (error.code === 50035) {
-        console.log(`[ WASH > AVISO ] O ${interaction.user.tag} tentou executar o comando em um usuário com um cargo mais alto.`);
         const errorEmbed = new MessageEmbed()
           .setTitle('Erro ao executar comando')
           .setDescription('Você não pode executar este comando em um usuário que possua um cargo mais alto do que você.')
@@ -43,7 +40,7 @@ module.exports = {
           .setThumbnail(config.Logo);
         await interaction.reply({ embeds: [errorEmbed], ephemeral: true });
       } else {
-        console.log(`[ WASH > ERRO ] Erro ao executar o comando /wash.`);
+        //      
       }
     }
   },

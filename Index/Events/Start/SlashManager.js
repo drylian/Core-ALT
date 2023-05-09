@@ -2,11 +2,14 @@ const { Collection, MessageEmbed } = require('discord.js');
 const { readdirSync } = require('fs');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
-const { token, guildId, clientId } = require('../../Config/config.json');
+const { config } = require('../../../Settings');
+const token = config.token;
+const guildId = config.guildId;
+const clientId = config.clientId;
 const lastCommandUsed = {};
 const fs = require('fs');
 const colors = require('colors');
-const logDir = '../';
+const logDir = './logs';
 
 if (!fs.existsSync(logDir)) {
     console.log(`[${colors.magenta(' LOG ')}] Pasta Logs não existe, Criando uma.`);
@@ -21,21 +24,21 @@ if (!fs.existsSync(logDir)) {
 // Função para registrar logs de comandos
 function logCommand(commandName, userId, userUsername, userDiscriminator) {
     const logMessage = `[${new Date().toLocaleString()}] Comando Slash "/${commandName}" usado pelo usuário ${userUsername}#${userDiscriminator}(${userId})\n`;
-    console.log(logMessage);
+    console.log(`[ ${colors.green(commandName)} ] Foi executado pelo usuário ${colors.blue(userUsername + '#' + userDiscriminator)}(${userId})\n`);
     commandLogStream.write(logMessage);
   }
   
   // Função para registrar logs de erros
   function logError(commandName, error) {
-    const logMessage = `[${new Date().toLocaleString()}] no Comando Slash "/${commandName}" , Erro: ${error.stack}\n`;
-    console.log(logMessage);
+    const logMessage = `[${new Date().toLocaleString()}] Erro no Comando Slash "/${commandName}" , Erro: ${error.stack}\n`;
+    console.log(`[ ${colors.red(commandName)} ] Obteve o Erro ao ser executado: ${error.stack}\n`);
     errorLogStream.write(logMessage);
   }
   
   // Função para registrar logs fatais
   function logFlood(commandName, userId, userUsername, userDiscriminator) {
     const logMessage = `[${new Date().toLocaleString()}] Comando Slash "/${commandName}" floodado pelo usuário ${userUsername}#${userDiscriminator}(${userId})\n`;
-    console.log(logMessage);
+    console.log(`[ ${colors.yellow(commandName)} ] Foi floodado pelo usuário ${colors.blue(userUsername + '#' + userDiscriminator)}(${userId})\n`);
     floodLogStream.write(logMessage);
   }
 

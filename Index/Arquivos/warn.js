@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed } = require('discord.js');
-const config = require('../Config/config.json');
+const { config } = require('../../../Settings');
 
 const tags = {
     '1/3': 'Aviso 1/3',
@@ -22,7 +22,6 @@ module.exports = {
                 .setDescription('Razão para o aviso')
                 .setRequired(true)),
     async execute(interaction) {
-        console.log('[ WARN ]', interaction.user.tag, 'executou o comando /warn.');
 
         const member = interaction.options.getMember('usuário');
         const user = member.user;
@@ -74,14 +73,6 @@ module.exports = {
             }
         }
 
-        console.log(
-            "[ WARN ]",
-            user.tag,
-            "recebeu um aviso do usuário",
-            interaction.user.tag,
-            ":",
-            reason
-        );
         const embed = new MessageEmbed()
             .setColor("GREEN")
             .setTitle("Aviso")

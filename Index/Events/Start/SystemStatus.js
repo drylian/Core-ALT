@@ -1,7 +1,8 @@
 const Discord = require('discord.js');
 const MessageEmbed = require('discord.js').MessageEmbed;
 const si = require('systeminformation');
-const Config = require('../../Config/config.json');
+const { config } = require('../../../Settings');
+const Config = config;
 const fs = require('fs');
 const os = require('os');
 const https = require('http');
@@ -10,7 +11,9 @@ const disk = require('node-disk-info');
 module.exports = {
     name: 'ready',
     run: async (client) => {
-        const channel = client.channels.cache.get(Config.System.Channel);
+        if (Config.Start.SystemStatus.Active === true) {
+            console.log('[ SystemStatus ] SystemStatus Ativo, iniciando..');
+        const channel = client.channels.cache.get(Config.Start.System.Channel);
 
         const settingsFilePath = './Events/Start/Setup/SystemStatus/mensagem.json';
 
@@ -54,7 +57,7 @@ module.exports = {
 
                         // Verificações
                         const avisos = [];
-                        if (usedGB >= totalGB -  Config.System.Verificadores.Disk) {
+                        if (usedGB >= totalGB -  Config.Start.System.Verificadores.Disk) {
                             avisos.push({
                                 nome: `💻 Armazenamento "${d.mounted}"`,
                                 valor: `↳ ⚙️ O espaço está quase no limite definido. Usado: ${usedGB} GB / Total: ${totalGB} GB`
@@ -68,14 +71,14 @@ module.exports = {
                             });
                         }
 
-                        if (UsedMemory >= MaxMemory - Config.System.Verificadores.RAM) {
+                        if (UsedMemory >= MaxMemory - Config.Start.System.Verificadores.RAM) {
                             avisos.push({
                                 nome: '💻 RAM',
                                 valor: `↳ ⚙️ A ram está quase no limite definido ${UsedMemory}/${MaxMemory}`
                             });
                         }
 
-                        if (UsedSwap >= MaxSwap - Config.System.Verificadores.Swap) {
+                        if (UsedSwap >= MaxSwap - Config.Start.System.Verificadores.Swap) {
                             avisos.push({
                                 nome: '💻 Swap',
                                 valor: `↳ ⚙️ O Swap está quase no limite definido ${UsedSwap}/${MaxSwap}`
@@ -87,24 +90,24 @@ module.exports = {
                             const embed = new MessageEmbed()
                                 .setTitle('Aviso Sistema')
                                 .setColor(randomColor)
-                                .setDescription(Config.System.Voce)
+                                .setDescription(Config.Start.System.Voce)
                                 .setTimestamp();
 
                             avisos.forEach(aviso => {
                                 embed.addFields({ name: aviso.nome, value: aviso.valor });
                             });
 
-                            client.channels.cache.get(Config.System.Logs).send({ embeds: [embed] });
+                            client.channels.cache.get(Config.Start.System.Logs).send({ embeds: [embed] });
                         }
                     
                     })})
 
-                    // Adiciona Config.System.Timer milissegundos à data e hora atual
+                    // Adiciona Config.Start.System.Timer milissegundos à data e hora atual
                     let now = new Date();
 
-                    const tempo = parseInt(Config.System.Timer);
+                    const tempo = parseInt(Config.Start.System.Timer);
 
-                    // Adiciona Config.System.Timer milissegundos à data e hora atual
+                    // Adiciona Config.Start.System.Timer milissegundos à data e hora atual
                     let futureTime = new Date(now.getTime() + tempo);
 
                     // Formata a data e hora futuras em uma string formatada pelo Discord
@@ -250,6 +253,9 @@ module.exports = {
                     }
 
                     measureDownloadSpeed(null, null);
-                }, Config.System.Timer);
+                }, Config.Start.System.Timer);
+            } else {
+                    console.log('[ SystemStatus ] SystemStatus desativado, pulando...');
+            }
         }
 };

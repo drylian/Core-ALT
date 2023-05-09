@@ -3,7 +3,7 @@ const { Database } = require("simpl.db");
 const path = "../../database.json"; // caminho para o arquivo de banco de dados
 const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
 client.db = new Database(path);
-const config = require('../../Config/config.json');
+const { config } = require('../../../Settings');
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed, MessageActionRow, MessageButton, Permissions } = require('discord.js');
 const ptero = require('lmadactyl');
@@ -64,9 +64,9 @@ module.exports = {
                         .setStyle('LINK')
                         .setEmoji('963592169061490758')
                         .setLabel('Acessar o Painel')
-                        .setURL(config.pterodactyl.link + '/auth/login'),
+                        .setURL(config.Slash.pterodactyl.link + '/auth/login'),
                 )
-            let a = await ptero.application.createUser(config.pterodactyl.link, config.pterodactyl.token, email, pass, `${interaction.user.id}`, 'Gratuito', 'Usuário');
+            let a = await ptero.application.createUser(config.Slash.pterodactyl.link, config.Slash.pterodactyl.token, email, pass, `${interaction.user.id}`, 'Gratuito', 'Usuário');
 
             client.db.set(`account.${interaction.user.id}`, 'oi');
             client.db.set(`id.${interaction.user.id}`, a.attributes.id);
@@ -86,7 +86,7 @@ module.exports = {
                         allow: [Permissions.FLAGS.VIEW_CHANNEL],
                     },
                 ],
-                parent: config.pterodactyl.registercategory
+                parent: config.Slash.pterodactyl.registercategory
             });
             let embed3 = new MessageEmbed()
                 .setColor(randomColor)

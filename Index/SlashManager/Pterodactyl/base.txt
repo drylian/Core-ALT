@@ -4,7 +4,7 @@ Adicione console.log nos possiveis erros e avisos, altere o "COMANDO" e "NOME-DO
 
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed } = require('discord.js');
-const config = require('../../Config/config.json');
+const { config } = require('../../../Settings');
 const axios = require('axios');
 const colors = require('colors');
 const { format } = require('date-fns');

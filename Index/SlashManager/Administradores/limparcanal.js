@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed } = require('discord.js');
-const config = require('../../Config/config.json');
+const { config } = require('../../../Settings');
 
 module.exports = {
   data: new SlashCommandBuilder()
@@ -26,7 +26,6 @@ module.exports = {
     try {
       // Limpa o canal atual
       await channel.delete();
-      console.log(`[ LIMPARCANAL ] Canal ${channel.name} limpado completamente pelo usuário ${interaction.user.tag}`);
 
       // Envia uma mensagem informando que o canal foi nukado com sucesso
       const successEmbed = new MessageEmbed()
@@ -52,7 +51,6 @@ module.exports = {
         permissionOverwrites: permissions,
       });
 
-      console.log(`[ LIMPARCANAL ] Canal ${newChannel.name} criado com sucesso pelo usuário ${interaction.user.tag}`);
     } catch (error) {
       console.error(`[ LIMPARCANAL > ERRO] Ocorreu um erro ao limpar o canal ${channel.name}:`, error);
       const errorEmbed = new MessageEmbed()

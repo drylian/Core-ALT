@@ -1,6 +1,7 @@
 const { Client, Intents, Collection, MessageEmbed } = require('discord.js');
 const { readdirSync } = require('fs');
-const { token } = require('./Config/config.json');
+const { config } = require('../Settings');
+const token = config.token
 const colors = require('colors');
 
 const client = new Client({
