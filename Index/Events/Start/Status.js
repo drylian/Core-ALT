@@ -1,5 +1,7 @@
 const { setIntervalAsync } = require('set-interval-async/fixed');
 const { config } = require('../../../Settings');
+const colors = require('colors');
+
 const Config = config;
 const typeStyles = {
   PLAYING: "Jogando",
@@ -11,7 +13,7 @@ module.exports = {
   name: 'ready',
   run: async (client) => {
     if (Config.Start.Status.Active === true) {
-      console.log('[ STATUS ] Status Ativo, iniciando..');
+      console.log(`[ ${colors.cyan('EVENTOS')} ]  ${colors.green('Status')} Ativando...`);
       const statusList = Config.Start.Status.Mensagens.split(',');
       const TypeList = Config.Start.Status.Type.split(',');
       const tempo = parseInt(Config.Start.Status.Tempo);
@@ -27,12 +29,12 @@ module.exports = {
         const TypeStyle = typeStyles[newType];
 
         client.user.setActivity(newStatus, { type: newType });
-        console.log(`[ STATUS ] "${TypeStyle} em ${newStatus}".`);
+        console.log(`[ ${colors.cyan('EVENTOS')} ]  ${colors.green('Status')} - "${TypeStyle} em ${newStatus}".`);
         index++;
         status++;
       }, tempo);
     } else {
-      console.log('[ STATUS ] Status desativado, pulando...');
+      console.log(`[ ${colors.cyan('EVENTOS')} ]  ${colors.red('Status')} desativado.`);
     }
   }
 };

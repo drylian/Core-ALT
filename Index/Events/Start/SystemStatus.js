@@ -6,13 +6,14 @@ const Config = config;
 const fs = require('fs');
 const os = require('os');
 const https = require('http');
+const colors = require('colors');
 const disk = require('node-disk-info');
 
 module.exports = {
     name: 'ready',
     run: async (client) => {
         if (Config.Start.SystemStatus.Active === true) {
-            console.log('[ SystemStatus ] SystemStatus Ativo, iniciando..');
+            console.log(`[ ${colors.cyan('EVENTOS')} ]  ${colors.green('SystemStatus')} Ativo, iniciando..`);
         const channel = client.channels.cache.get(Config.Start.System.Channel);
 
         const settingsFilePath = './Events/Start/Setup/SystemStatus/mensagem.json';
@@ -232,7 +233,7 @@ module.exports = {
                                             channel.messages
                                                 .fetch(settings[channel.id])
                                                 .then((msg) => {
-                                                    console.log('[ STATUS-SYSTEM ] Atualizado')
+                                                    console.log(`[ ${colors.cyan('EVENTOS')} ]  ${colors.yellow('STATUS-SYSTEM')} Atualizado`)
                                                     msg.edit({ embeds: [embed] });
                                                 })
                                                 .catch((error) => {
@@ -240,7 +241,7 @@ module.exports = {
                                                 });
                                         } else {
                                             // Envia uma nova mensagem e armazena o ID
-                                            console.log('[ STATUS-SYSTEM ] Mensagem criada')
+                                            console.log(`[ ${colors.cyan('EVENTOS')} ]  ${colors.green('STATUS-SYSTEM')} Mensagem criada`)
                                             channel.send({ embeds: [embed] }).then((msg) => {
                                                 settings[channel.id] = msg.id;
                                                 fs.writeFileSync(settingsFilePath, JSON.stringify(settings));
@@ -255,7 +256,7 @@ module.exports = {
                     measureDownloadSpeed(null, null);
                 }, Config.Start.System.Timer);
             } else {
-                    console.log('[ SystemStatus ] SystemStatus desativado, pulando...');
+                    console.log(`[ ${colors.cyan('EVENTOS')} ]  ${colors.red('SystemStatus')} desativado.`);
             }
         }
 };

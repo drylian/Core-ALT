@@ -70,6 +70,7 @@ module.exports = {
 
             client.db.set(`account.${interaction.user.id}`, 'oi');
             client.db.set(`id.${interaction.user.id}`, a.attributes.id);
+            client.db.set(`uuid.${interaction.user.id}`, a.attributes.uuid);
             client.db.set(`sim.${interaction.user.id}`, 'sim');
             client.db.set(`email.${interaction.user.id}`, email);
             client.db.set(`senha.${interaction.user.id}`, pass);

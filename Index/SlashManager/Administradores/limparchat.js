@@ -38,7 +38,6 @@ module.exports = {
 
     // Verifica se há alguma mensagem para apagar
     if (messages.size === 0) {
-      console.log('[ CLEAR > AVISO ] Não há mensagens para apagar');
       const noMessagesEmbed = new MessageEmbed()
         .setTitle('Chat limpo')
         .setDescription('Não há mensagens para apagar.')

@@ -24,13 +24,17 @@ const client = new Client({
   ],
 });
 
-console.log(`[${colors.blue(' BOT ')}] Iniciando eventos de inicialização.`);
+console.log(`[${colors.rainbow(' Client ')}] Iniciando eventos de inicialização.`);
 
 const startFiles = readdirSync('./Index/Events/Start').filter(file => file.endsWith('.js'));
+let event = [];
 for (const file of startFiles) {
-  const event = require(`./Events/Start/${file}`);
-  console.log(`[${colors.blue(' BOT ')}] ${colors.yellow(file)} iniciado.`);
-  client.on(event.name, event.run.bind(null, client));
+  const currentEvent = require(`./Events/Start/${file}`);
+  event.push(file);
+  client.on(currentEvent.name, currentEvent.run.bind(null, client));
 }
+const eventsTotal = event.length;
+console.log(`[ ${colors.rainbow('Client')} ]  ${colors.cyan('Eventos')} - ${colors.green(eventsTotal)} [ ${colors.magenta(event.join(', '))} ] `);
+
 
 client.login(token);
