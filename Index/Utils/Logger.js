@@ -11,6 +11,7 @@ if (!fs.existsSync(logDir)) {
 const commandLogStream = fs.createWriteStream(`${logDir}/Comandos.txt`, { flags: 'a' });
 const errorLogStream = fs.createWriteStream(`${logDir}/Erros.txt`, { flags: 'a' });
 const floodLogStream = fs.createWriteStream(`${logDir}/Flood.txt`, { flags: 'a' });
+const warningLogStream = fs.createWriteStream(`${logDir}/Avisos.txt`, { flags: 'a' });
 
 function logCommand(commandName, userId, userUsername, userDiscriminator) {
     const logMessage = `[${new Date().toLocaleString()}] Comando Slash "/${commandName}" usado pelo usuário ${userUsername}#${userDiscriminator}(${userId})\n`;
@@ -30,4 +31,11 @@ function logFlood(commandName, userId, userUsername, userDiscriminator) {
     floodLogStream.write(logMessage);
 }
 
-module.exports = { logCommand, logError, logFlood };
+function logWarning(commandName, logContent) {
+  const logMessage = `[${new Date().toLocaleString()}] Comando Slash "/${commandName}" gerou um aviso: ${logContent}\n`;
+  console.log(`[ ${colors.yellow('/' + commandName)} ] Gerou o aviso: ${logContent}\n`);
+  warningLogStream.write(logMessage);
+}
+
+module.exports = { logCommand, logError, logFlood, logWarning };
+

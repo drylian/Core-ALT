@@ -37,6 +37,9 @@ const config = {
         }
     },
     'Slash': {
+        'Propriedades':{
+            'Tempo': "5000" // Tempo de espera para cada comando slash executado em milisegundos.
+        },
         // Comandos do Slash || SlashManager/Pastas.
         'pterodactyl': { // SlashManager/Pterodactyl
             'url': 'https://painel.alternight.ml',

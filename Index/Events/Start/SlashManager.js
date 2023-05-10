@@ -3,16 +3,13 @@ const { readdirSync } = require('fs');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 const { config } = require('../../../Settings');
-const interactionCreate = require('../../Config/InteractionCreate');
-const token = config.token;
-const guildId = config.guildId;
-const clientId = config.clientId;
+const interactionCreate = require('../../Utils/InteractionCreate');
 const colors = require('colors');
 
 module.exports = {
     name: 'ready', // O nome do evento que será registrado
     run: async (client) => {
-        console.log(`[ ${colors.cyan('EVENTOS')} ]  ${colors.green('Slash-Manager')}  Iniciando Slash.`);
+        console.log(`[ ${colors.cyan('Eventos')} ]  ${colors.green('Slash-Manager')}  Iniciando Slash.`);
 
         client.commands = new Collection();
 
@@ -32,15 +29,15 @@ module.exports = {
             }
 
             const commandsTotal = commands.length;
-            console.log(`[ ${colors.cyan('EVENTOS')} ]  ${colors.green('Slash')} - ${colors.magenta(mainCategory)} = ${colors.cyan(commandsTotal)} [ ${colors.green('/' + commands.join(', /'))} ] `);
+            console.log(`[ ${colors.cyan('Eventos')} ]  ${colors.green('Slash')} - ${colors.magenta(mainCategory)} = ${colors.cyan(commandsTotal)} [ ${colors.green('/' + commands.join(', /'))} ] `);
 
-            const rest = new REST({ version: '9' }).setToken(token);
+            const rest = new REST({ version: '9' }).setToken(config.token);
 
             (async () => {
                 try {
                     const commands = client.commands.map(command => command.data.toJSON());
                     await rest.put(
-                        Routes.applicationGuildCommands(clientId, guildId),
+                        Routes.applicationGuildCommands(config.clientId, config.guildId),
                         { body: commands },
                     );
                 } catch (error) {
@@ -48,7 +45,7 @@ module.exports = {
                 }
             })();
 
-            client.on(interactionCreate.name, (...args) => interactionCreate.run(client, ...args));
         }
+        client.on(interactionCreate.name, (...args) => interactionCreate.run(client, ...args));
     }
 };

@@ -1,4 +1,5 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
+const { logWarning } = require('../../Utils/Logger');
 const { MessageEmbed } = require('discord.js');
 
 module.exports = {
@@ -19,6 +20,7 @@ module.exports = {
     
     // Verifica se o usuário que executou o comando tem permissão para banir usuários
     if (!interaction.member.permissions.has('BAN_MEMBERS')) {
+      logWarning('BAN', `O usuario ${interaction.user.username}#${interaction.user.discriminator} tentou usar o banir sem ter permissão.`);
       return interaction.reply({ content: 'Você não tem permissão para banir usuários!', ephemeral: true });
     }
     
@@ -32,6 +34,8 @@ module.exports = {
     // Tenta banir o usuário
     try {
       await interaction.guild.members.ban(user, { reason });
+      // Adiciona o log de warning após o comando ter sido executado
+      logWarning('BAN', `O usuario ${interaction.user.username}#${interaction.user.discriminator} baniu o ${user.username}#${user.discriminator}`);
       
       const embed = new MessageEmbed()
         .setColor('GREEN')

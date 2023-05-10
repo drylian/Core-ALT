@@ -1,5 +1,7 @@
 const { MessageEmbed } = require('discord.js');
 const { logCommand, logError, logFlood } = require('./Logger');
+const { config } = require('../../Settings');
+
 const lastCommandUsed = {};
 
 module.exports = {
@@ -16,16 +18,28 @@ module.exports = {
     const lastTime = lastCommandUsed[interaction.user.id] || 0;
     const elapsedTime = (currentTime - lastTime) / 1000;
 
-    if (elapsedTime < 5) {
-      const remainingTime = Math.ceil(5 - elapsedTime);
+    // Adiciona Config.Start.System.Timer milissegundos à data e hora atual
+    let now = new Date();
+
+    const tempo = parseInt(config.Slash.Propriedades.Tempo);
+    const timecont = parseInt(config.Slash.Propriedades.Tempo / 1000);
+
+    // Adiciona Config.Start.System.Timer milissegundos à data e hora atual
+    let futureTime = new Date(now.getTime() + tempo);
+
+    // Formata a data e hora futuras em uma string formatada pelo Discord
+    let futureTimeString = `<t:${Math.floor(futureTime.getTime() / 1000)}:R>`;
+
+    if (elapsedTime < timecont) {
       logFlood(commandName, interaction.user.id, interaction.user.username, interaction.user.discriminator);
       const embed = new MessageEmbed()
         .setTitle('Comando usado muito rápido!')
-        .setDescription(`Aguarde ${remainingTime} segundos antes de usar outro comando!`)
+        .setDescription(`Você poderá usar o comando ` + futureTimeString + `!`)
         .setColor('#FF0000');
       await interaction.reply({ embeds: [embed], ephemeral: true });
       return;
     }
+
 
     lastCommandUsed[interaction.user.id] = currentTime;
 
