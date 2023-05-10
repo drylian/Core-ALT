@@ -238,3 +238,10 @@
     at WebSocketShard.onMessage (C:\Users\Drylian\Documents\GitHub\Core-ALT\node_modules\discord.js\src\client\websocket\WebSocketShard.js:327:10)
     at callListener (C:\Users\Drylian\Documents\GitHub\Core-ALT\node_modules\ws\lib\event-target.js:290:14)
     at WebSocket.onMessage (C:\Users\Drylian\Documents\GitHub\Core-ALT\node_modules\ws\lib\event-target.js:209:9)
+[10/05/2023, 12:11:59] Erro no Comando Slash "/ping" , Erro: DiscordAPIError: Unknown interaction
+    at RequestHandler.execute (C:\Users\Drylian\Documents\GitHub\Core-ALT\node_modules\discord.js\src\rest\RequestHandler.js:350:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async RequestHandler.push (C:\Users\Drylian\Documents\GitHub\Core-ALT\node_modules\discord.js\src\rest\RequestHandler.js:51:14)
+    at async CommandInteraction.reply (C:\Users\Drylian\Documents\GitHub\Core-ALT\node_modules\discord.js\src\structures\interfaces\InteractionResponses.js:103:5)
+    at async Object.execute (C:\Users\Drylian\Documents\GitHub\Core-ALT\Index\SlashManager\Membros\ping.js:16:5)
+    at async Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\Index\Events\Start\SlashManager.js:111:21)
