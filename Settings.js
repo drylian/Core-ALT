@@ -1,5 +1,6 @@
 const config = {
     'token': 'MTAwMDk4NjQ5NTcwNTk0ODIxMg.Go5sPY.qWp21rgN-zE7cRkVYL25GbV_uYgH5SfZCGWn6M', // Token do bot
+    'Debug': false, // Depuração Total do bot.
     'Master': '428660430412709889', // ID do dono do grupo do discord
     'guildId': '925837612000903251',
     'guildname': 'Alternight',
@@ -10,11 +11,17 @@ const config = {
         'image': 'https://cdn.discordapp.com/attachments/1033486312956768336/1087122572342206524/Alternight_txt.png'
     },
     'emoji': { // Emojis do servidor
-        'alert': '<:3360alert:1090983580395651232>', 
+        'alert': '<:3360alert:1090983580395651232>',
         'check': '<:8308checkmark1:1091045783136112670>',
         'server': '<:8308checkmark1:1091045783136112670>'
     },
     'Start': { // Comandos de Inicialização.
+        'Fastify': { // Start/Status || Status do bot
+            'Active': true, // Ativa / Desativa o comando
+            'Porta': '24206',
+            'ChannelID': '1090977688505823303',
+            'EmbedColor': '0c00ba',
+        },
         'Status': { // Start/Status || Status do bot
             'Active': true, // Ativa / Desativa o comando
             'Mensagens': 'Em desenvolvimento.,Criado por Drylian.,Venha para Alternight.,Painel Alternight em criação.',
@@ -31,14 +38,24 @@ const config = {
         },
         'SystemStatus': { // Start/Status || Status do bot
             'Active': false, // Ativa / Desativa o comando
+            'Verificadores': {
+                'RAM': '1.00',
+                'Swap': '1.00',
+                'PorcenCPU': '80'
+            },
+            'API': 'http://node.seventyhost.net:25015/system-info',
+            'Channel': '1011985405291282473',
+            'Timer': '6000',
+            'Logs': '1011985405291282473',
+            'Voce': '<@379089880887721995>'
         },
         'Base': { // Start/Base || Base do Status
             'Active': false, // Ativa / Desativa o comando
         }
     },
     'Slash': {
-        'Propriedades':{
-            'Tempo': "5000" // Tempo de espera para cada comando slash executado em milisegundos.
+        'Propriedades': {
+            'Tempo': '5000' // Tempo de espera para cada comando slash executado em milisegundos.
         },
         // Comandos do Slash || SlashManager/Pastas.
         'pterodactyl': { // SlashManager/Pterodactyl
@@ -48,7 +65,7 @@ const config = {
             'registercategory': '1090977688505823303',
             'CreateServerNodeID': '1'
         },
-        'Membros':{
+        'Membros': {// SlashManager/Membros
             'Info': {
                 'Name': 'Alternight',
                 'Dono': 'ΩDrylian_BR/[16198]#5347',
@@ -57,8 +74,15 @@ const config = {
                 'Painel': 'https://painel.alternight.ml/',
                 'Desc': 'Alternight Servers um projeto um tanto quanto bizarro.'
             }
-        }
+        },
+        'Nextcloud': {
+            'URL': 'https://cloud.seventyhost.net',
+            'API': 'https://cloud.seventyhost.net/ocs/v2.php/apps/serverinfo/api/v1/info',
+            'Username': 'Matheus',
+            'Password': '999678769'
+        },
     }
+
 }
 
 const crypto = {
@@ -73,7 +97,7 @@ const crypto = {
     }
 }
 
-const category ={
+const category = {
     'categories': [
         {
             'name': 'Master',
@@ -106,12 +130,18 @@ const category ={
             'description': 'Coisas que o Chat GPT me recomenda',
             'color': 'YELLOW',
             'main': true
-        }
+        },
+        {
+            'name': 'Nextcloud',
+            'description': 'Comandos de Administração Nextcloud',
+            'color': '#ff0000',
+            'main': true
+        },
     ]
 }
 
 module.exports = { // Exporta as configurações
     config,
     crypto,
-    category 
+    category
 }

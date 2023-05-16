@@ -1,7 +1,7 @@
 const { MessageEmbed } = require('discord.js');
-const { logCommand, logError, logFlood } = require('./Logger');
+const Logger = require('./Logger');
 const { config } = require('../../Settings');
-
+const Log = Logger.SlashManagerLogger();
 const lastCommandUsed = {};
 
 module.exports = {
@@ -31,7 +31,7 @@ module.exports = {
     let futureTimeString = `<t:${Math.floor(futureTime.getTime() / 1000)}:R>`;
 
     if (elapsedTime < timecont) {
-      logFlood(commandName, interaction.user.id, interaction.user.username, interaction.user.discriminator);
+      Log.logFlood(commandName, interaction.user.id, interaction.user.username, interaction.user.discriminator);
       const embed = new MessageEmbed()
         .setTitle('Comando usado muito rápido!')
         .setDescription(`Você poderá usar o comando ` + futureTimeString + `!`)
@@ -45,10 +45,10 @@ module.exports = {
 
     try {
       await command.execute(interaction);
-      logCommand(commandName, interaction.user.id, interaction.user.username, interaction.user.discriminator);
+      Log.logCommand(commandName, interaction.user.id, interaction.user.username, interaction.user.discriminator);
     } catch (error) {
       console.error(error);
-      logError(commandName, error);
+      Log.logError(commandName, error);
       const embed = new MessageEmbed()
         .setTitle('Erro ao usar o comando')
         .setDescription('Ocorreu um erro ao usar o comando, esse incidente foi registrado.')

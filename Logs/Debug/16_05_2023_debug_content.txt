@@ -1,0 +1,214 @@
+[ [33mC[39m[32ml[39m[34mi[39m[35me[39m[31mn[39m[33mt[39m ] Iniciando eventos de inicialização.
+[ [31mC[39m[33ml[39m[32mi[39m[34me[39m[35mn[39m[31mt[39m ]  [36mEventos[39m - [32m4[39m [ [35mMysql.js, SlashManager.js, Status.js, SystemStatus.js[39m ] 
+[ [36mEventos[39m ]  [31mMysql[39m desativado. Usando Database Interno.
+[ [36mEventos[39m ]  [32mSlash-Manager[39m  Iniciando Slash.
+[ [36mEventos[39m ]  [32mSlash[39m - [35mAdministradores[39m = [36m8[39m [ [32m/ban, /kick, /limparcanal, /limparchat, /lock, /modolento, /unban, /unlock[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mAinda Não Sei[39m = [36m1[39m [ [32m/wash[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mMaster[39m = [36m3[39m [ [32m/criarservidor, /dashboard, /registrar[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mMembros[39m = [36m4[39m [ [32m/ajuda, /info, /ping, /userinfo[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mMúsica[39m = [36m1[39m [ [32m/play[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mPterodactyl[39m = [36m1[39m [ [32m/pterostatus[39m ] 
+[ [36mEventos[39m ]  [32mStatus[39m Ativando...
+[ [36mEventos[39m ]  [31mSystemStatus[39m desativado.
+[ [32mMysql.js[39m ] Iniciou com Sucesso.
+[ [32mSlashManager.js[39m ] Iniciou com Sucesso.
+[ [32mStatus.js[39m ] Iniciou com Sucesso.
+[ [32mSystemStatus.js[39m ] Iniciou com Sucesso.
+[ [32m/userinfo[39m ] Foi executado pelo usuário [34mΩDrylian_BR/[16198]#5347[39m(428660430412709889)
+
+[ [33mC[39m[32ml[39m[34mi[39m[35me[39m[31mn[39m[33mt[39m ] Iniciando eventos de inicialização.
+[ [31mC[39m[33ml[39m[32mi[39m[34me[39m[35mn[39m[31mt[39m ]  [36mEventos[39m - [32m4[39m [ [35mMysql.js, SlashManager.js, Status.js, SystemStatus.js[39m ] 
+[ [36mEventos[39m ]  [31mMysql[39m desativado. Usando Database Interno.
+[ [36mEventos[39m ]  [32mSlash-Manager[39m  Iniciando Slash.
+[ [36mEventos[39m ]  [32mSlash[39m - [35mAdministradores[39m = [36m8[39m [ [32m/ban, /kick, /limparcanal, /limparchat, /lock, /modolento, /unban, /unlock[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mAinda Não Sei[39m = [36m1[39m [ [32m/wash[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mMaster[39m = [36m3[39m [ [32m/criarservidor, /dashboard, /registrar[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mMembros[39m = [36m4[39m [ [32m/ajuda, /info, /ping, /userinfo[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mMúsica[39m = [36m1[39m [ [32m/play[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mPterodactyl[39m = [36m1[39m [ [32m/pterostatus[39m ] 
+[ [36mEventos[39m ]  [32mStatus[39m Ativando...
+[ [36mEventos[39m ]  [31mSystemStatus[39m desativado.
+[ [32mMysql.js[39m ] Iniciou com Sucesso.
+[ [32mSlashManager.js[39m ] Iniciou com Sucesso.
+[ [32mStatus.js[39m ] Iniciou com Sucesso.
+[ [32mSystemStatus.js[39m ] Iniciou com Sucesso.
+[ [33mC[39m[32ml[39m[34mi[39m[35me[39m[31mn[39m[33mt[39m ] Iniciando eventos de inicialização.
+[ [33mC[39m[32ml[39m[34mi[39m[35me[39m[31mn[39m[33mt[39m ] Iniciando eventos de inicialização.
+[ [31mC[39m[33ml[39m[32mi[39m[34me[39m[35mn[39m[31mt[39m ]  [36mEventos[39m - [32m5[39m [ [35mFastify.js, Mysql.js, SlashManager.js, Status.js, SystemStatus.js[39m ] 
+[ [36mEventos[39m ]  [31mMysql[39m desativado. Usando Database Interno.
+[ [36mEventos[39m ]  [32mSlash-Manager[39m  Iniciando Slash.
+[ [36mEventos[39m ]  [32mSlash[39m - [35mAdministradores[39m = [36m8[39m [ [32m/ban, /kick, /limparcanal, /limparchat, /lock, /modolento, /unban, /unlock[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mAinda Não Sei[39m = [36m1[39m [ [32m/wash[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mMaster[39m = [36m3[39m [ [32m/criarservidor, /dashboard, /registrar[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mMembros[39m = [36m4[39m [ [32m/ajuda, /info, /ping, /userinfo[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mMúsica[39m = [36m1[39m [ [32m/play[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mPterodactyl[39m = [36m1[39m [ [32m/pterostatus[39m ] 
+[ [36mEventos[39m ]  [32mStatus[39m Ativando...
+[ [36mEventos[39m ]  [31mSystemStatus[39m desativado.
+[ [32mMysql.js[39m ] Iniciou com Sucesso.
+[ [32mSlashManager.js[39m ] Iniciou com Sucesso.
+[ [32mStatus.js[39m ] Iniciou com Sucesso.
+[ [32mSystemStatus.js[39m ] Iniciou com Sucesso.
+[ [31mLOGGERFastify.js[39m ] Obteve o Erro ao ser executado: Error: Cannot find module '../../../Config/config.json'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\Index\Events\Start\Setup\Fastify\functions\embedLog.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\Index\Events\Start\Setup\Fastify\routes\v1\owlivery\catch.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\node_modules\fastify-autoload-deprecated\index.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\node_modules\fastify-autoload\index.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\Index\Events\Start\Fastify.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\Index\Utils\EventLoader.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\Index\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\Index\Events\Start\Setup\Fastify\functions\embedLog.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+
+[ [32m/userinfo[39m ] Foi executado pelo usuário [34mΩDrylian_BR/[16198]#5347[39m(428660430412709889)
+
+[ [33mC[39m[32ml[39m[34mi[39m[35me[39m[31mn[39m[33mt[39m ] Iniciando eventos de inicialização.
+[ [31mC[39m[33ml[39m[32mi[39m[34me[39m[35mn[39m[31mt[39m ]  [36mEventos[39m - [32m5[39m [ [35mFastify.js, Mysql.js, SlashManager.js, Status.js, SystemStatus.js[39m ] 
+[ [36mEventos[39m ]  [31mMysql[39m desativado. Usando Database Interno.
+[ [36mEventos[39m ]  [32mSlash-Manager[39m  Iniciando Slash.
+[ [36mEventos[39m ]  [32mSlash[39m - [35mAdministradores[39m = [36m8[39m [ [32m/ban, /kick, /limparcanal, /limparchat, /lock, /modolento, /unban, /unlock[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mAinda Não Sei[39m = [36m1[39m [ [32m/wash[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mMaster[39m = [36m3[39m [ [32m/criarservidor, /dashboard, /registrar[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mMembros[39m = [36m4[39m [ [32m/ajuda, /info, /ping, /userinfo[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mMúsica[39m = [36m1[39m [ [32m/play[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mPterodactyl[39m = [36m1[39m [ [32m/pterostatus[39m ] 
+[ [36mEventos[39m ]  [32mStatus[39m Ativando...
+[ [36mEventos[39m ]  [31mSystemStatus[39m desativado.
+[ [31mLOGGERFastify.js[39m ] Obteve o Erro ao ser executado: ReferenceError: colors is not defined
+    at Object.run (C:\Users\Drylian\Documents\GitHub\Core-ALT\Index\Events\Start\Fastify.js:19:24)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\Index\Utils\EventLoader.js:16:28)
+    at Client.emit (node:events:525:35)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\Core-ALT\node_modules\discord.js\src\client\websocket\WebSocketManager.js:379:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\Core-ALT\node_modules\discord.js\src\client\websocket\WebSocketManager.js:362:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\node_modules\discord.js\src\client\websocket\WebSocketManager.js:189:14)
+    at WebSocketShard.emit (node:events:513:28)
+    at WebSocketShard.checkReady (C:\Users\Drylian\Documents\GitHub\Core-ALT\node_modules\discord.js\src\client\websocket\WebSocketShard.js:524:12)
+    at WebSocketShard.onPacket (C:\Users\Drylian\Documents\GitHub\Core-ALT\node_modules\discord.js\src\client\websocket\WebSocketShard.js:496:16)
+    at WebSocketShard.onMessage (C:\Users\Drylian\Documents\GitHub\Core-ALT\node_modules\discord.js\src\client\websocket\WebSocketShard.js:327:10)
+
+[ [32mMysql.js[39m ] Iniciou com Sucesso.
+[ [32mSlashManager.js[39m ] Iniciou com Sucesso.
+[ [32mStatus.js[39m ] Iniciou com Sucesso.
+[ [32mSystemStatus.js[39m ] Iniciou com Sucesso.
+[ [33mC[39m[32ml[39m[34mi[39m[35me[39m[31mn[39m[33mt[39m ] Iniciando eventos de inicialização.
+[ [33mC[39m[32ml[39m[34mi[39m[35me[39m[31mn[39m[33mt[39m ] Iniciando eventos de inicialização.
+[ [33mC[39m[32ml[39m[34mi[39m[35me[39m[31mn[39m[33mt[39m ] Iniciando eventos de inicialização.
+[ [33mC[39m[32ml[39m[34mi[39m[35me[39m[31mn[39m[33mt[39m ] Iniciando eventos de inicialização.
+[ [33mC[39m[32ml[39m[34mi[39m[35me[39m[31mn[39m[33mt[39m ] Iniciando eventos de inicialização.
+[ [33mC[39m[32ml[39m[34mi[39m[35me[39m[31mn[39m[33mt[39m ] Iniciando eventos de inicialização.
+[ [33mC[39m[32ml[39m[34mi[39m[35me[39m[31mn[39m[33mt[39m ] Iniciando eventos de inicialização.
+[ [33mC[39m[32ml[39m[34mi[39m[35me[39m[31mn[39m[33mt[39m ] Iniciando eventos de inicialização.
+[ [33mC[39m[32ml[39m[34mi[39m[35me[39m[31mn[39m[33mt[39m ] Iniciando eventos de inicialização.
+[ [33mC[39m[32ml[39m[34mi[39m[35me[39m[31mn[39m[33mt[39m ] Iniciando eventos de inicialização.
+[ [33mC[39m[32ml[39m[34mi[39m[35me[39m[31mn[39m[33mt[39m ] Iniciando eventos de inicialização.
+[ [31mC[39m[33ml[39m[32mi[39m[34me[39m[35mn[39m[31mt[39m ]  [36mEventos[39m - [32m5[39m [ [35mFastify.js, Mysql.js, SlashManager.js, Status.js, SystemStatus.js[39m ] 
+[ [36mEventos[39m ]  [31mMysql[39m desativado. Usando Database Interno.
+[ [36mEventos[39m ]  [32mSlash-Manager[39m  Iniciando Slash.
+[ [36mEventos[39m ]  [32mSlash[39m - [35mAdministradores[39m = [36m8[39m [ [32m/ban, /kick, /limparcanal, /limparchat, /lock, /modolento, /unban, /unlock[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mAinda Não Sei[39m = [36m1[39m [ [32m/wash[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mMaster[39m = [36m3[39m [ [32m/criarservidor, /dashboard, /registrar[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mMembros[39m = [36m4[39m [ [32m/ajuda, /info, /ping, /userinfo[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mMúsica[39m = [36m1[39m [ [32m/play[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mPterodactyl[39m = [36m1[39m [ [32m/pterostatus[39m ] 
+[ [36mEventos[39m ]  [32mStatus[39m Ativando...
+[ [36mEventos[39m ]  [31mSystemStatus[39m desativado.
+[ [31mLOGGERFastify.js[39m ] Obteve o Erro ao ser executado: ReferenceError: colors is not defined
+    at Object.run (C:\Users\Drylian\Documents\GitHub\Core-ALT\Index\Events\Start\Fastify.js:50:24)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\Index\Utils\EventLoader.js:16:28)
+    at Client.emit (node:events:525:35)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\Core-ALT\node_modules\discord.js\src\client\websocket\WebSocketManager.js:379:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\Core-ALT\node_modules\discord.js\src\client\websocket\WebSocketManager.js:362:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\node_modules\discord.js\src\client\websocket\WebSocketManager.js:189:14)
+    at WebSocketShard.emit (node:events:513:28)
+    at WebSocketShard.checkReady (C:\Users\Drylian\Documents\GitHub\Core-ALT\node_modules\discord.js\src\client\websocket\WebSocketShard.js:524:12)
+    at WebSocketShard.onPacket (C:\Users\Drylian\Documents\GitHub\Core-ALT\node_modules\discord.js\src\client\websocket\WebSocketShard.js:496:16)
+    at WebSocketShard.onMessage (C:\Users\Drylian\Documents\GitHub\Core-ALT\node_modules\discord.js\src\client\websocket\WebSocketShard.js:327:10)
+
+[ [32mMysql.js[39m ] Iniciou com Sucesso.
+[ [32mSlashManager.js[39m ] Iniciou com Sucesso.
+[ [32mStatus.js[39m ] Iniciou com Sucesso.
+[ [32mSystemStatus.js[39m ] Iniciou com Sucesso.
+[ [33mC[39m[32ml[39m[34mi[39m[35me[39m[31mn[39m[33mt[39m ] Iniciando eventos de inicialização.
+[ [31mC[39m[33ml[39m[32mi[39m[34me[39m[35mn[39m[31mt[39m ]  [36mEventos[39m - [32m5[39m [ [35mFastify.js, Mysql.js, SlashManager.js, Status.js, SystemStatus.js[39m ] 
+[ [36mEventos[39m ]  [31mFastify[39m desativado. http não iniciado.
+[ [36mEventos[39m ]  [31mMysql[39m desativado. Usando Database Interno.
+[ [36mEventos[39m ]  [32mSlash-Manager[39m  Iniciando Slash.
+[ [36mEventos[39m ]  [32mSlash[39m - [35mAdministradores[39m = [36m8[39m [ [32m/ban, /kick, /limparcanal, /limparchat, /lock, /modolento, /unban, /unlock[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mAinda Não Sei[39m = [36m1[39m [ [32m/wash[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mMaster[39m = [36m3[39m [ [32m/criarservidor, /dashboard, /registrar[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mMembros[39m = [36m4[39m [ [32m/ajuda, /info, /ping, /userinfo[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mMúsica[39m = [36m1[39m [ [32m/play[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mPterodactyl[39m = [36m1[39m [ [32m/pterostatus[39m ] 
+[ [36mEventos[39m ]  [32mStatus[39m Ativando...
+[ [36mEventos[39m ]  [31mSystemStatus[39m desativado.
+[ [32mFastify.js[39m ] Iniciou com Sucesso.
+[ [32mMysql.js[39m ] Iniciou com Sucesso.
+[ [32mSlashManager.js[39m ] Iniciou com Sucesso.
+[ [32mStatus.js[39m ] Iniciou com Sucesso.
+[ [32mSystemStatus.js[39m ] Iniciou com Sucesso.
+[ [33mC[39m[32ml[39m[34mi[39m[35me[39m[31mn[39m[33mt[39m ] Iniciando eventos de inicialização.
+[ [31mC[39m[33ml[39m[32mi[39m[34me[39m[35mn[39m[31mt[39m ]  [36mEventos[39m - [32m5[39m [ [35mFastify.js, Mysql.js, SlashManager.js, Status.js, SystemStatus.js[39m ] 
+[ [36mEventos[39m ]  [32mFastify[39m Iniciando http...
+[ [36mEventos[39m ]  [31mMysql[39m desativado. Usando Database Interno.
+[ [36mEventos[39m ]  [32mSlash-Manager[39m  Iniciando Slash.
+[ [36mEventos[39m ]  [32mSlash[39m - [35mAdministradores[39m = [36m8[39m [ [32m/ban, /kick, /limparcanal, /limparchat, /lock, /modolento, /unban, /unlock[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mAinda Não Sei[39m = [36m1[39m [ [32m/wash[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mMaster[39m = [36m3[39m [ [32m/criarservidor, /dashboard, /registrar[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mMembros[39m = [36m4[39m [ [32m/ajuda, /info, /ping, /userinfo[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mMúsica[39m = [36m1[39m [ [32m/play[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mPterodactyl[39m = [36m1[39m [ [32m/pterostatus[39m ] 
+[ [36mEventos[39m ]  [32mStatus[39m Ativando...
+[ [36mEventos[39m ]  [31mSystemStatus[39m desativado.
+[ [32mMysql.js[39m ] Iniciou com Sucesso.
+[ [32mSlashManager.js[39m ] Iniciou com Sucesso.
+[ [32mStatus.js[39m ] Iniciou com Sucesso.
+[ [32mSystemStatus.js[39m ] Iniciou com Sucesso.
+[ [32mFastify.js[39m ] Iniciou com Sucesso.
+[ [33mC[39m[32ml[39m[34mi[39m[35me[39m[31mn[39m[33mt[39m ] Iniciando eventos de inicialização.
+[ [31mC[39m[33ml[39m[32mi[39m[34me[39m[35mn[39m[31mt[39m ]  [36mEventos[39m - [32m5[39m [ [35mFastify.js, Mysql.js, SlashManager.js, Status.js, SystemStatus.js[39m ] 
+[ [36mEventos[39m ]  [32mFastify[39m Iniciando http...
+[ [36mEventos[39m ]  [31mMysql[39m desativado. Usando Database Interno.
+[ [36mEventos[39m ]  [32mSlash-Manager[39m  Iniciando Slash.
+[ [36mEventos[39m ]  [32mSlash[39m - [35mAdministradores[39m = [36m8[39m [ [32m/ban, /kick, /limparcanal, /limparchat, /lock, /modolento, /unban, /unlock[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mAinda Não Sei[39m = [36m1[39m [ [32m/wash[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mMaster[39m = [36m3[39m [ [32m/criarservidor, /dashboard, /registrar[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mMembros[39m = [36m4[39m [ [32m/ajuda, /info, /ping, /userinfo[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mMúsica[39m = [36m1[39m [ [32m/play[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mPterodactyl[39m = [36m1[39m [ [32m/pterostatus[39m ] 
+[ [36mEventos[39m ]  [32mStatus[39m Ativando...
+[ [36mEventos[39m ]  [31mSystemStatus[39m desativado.
+[ [32mMysql.js[39m ] Iniciou com Sucesso.
+[ [32mSlashManager.js[39m ] Iniciou com Sucesso.
+[ [32mStatus.js[39m ] Iniciou com Sucesso.
+[ [32mSystemStatus.js[39m ] Iniciou com Sucesso.
+Ready! Logged in as HTTP://0.0.0.0:24206
+[ [32mFastify.js[39m ] Iniciou com Sucesso.
+[ [33mC[39m[32ml[39m[34mi[39m[35me[39m[31mn[39m[33mt[39m ] Iniciando eventos de inicialização.
+[ [31mC[39m[33ml[39m[32mi[39m[34me[39m[35mn[39m[31mt[39m ]  [36mEventos[39m - [32m5[39m [ [35mFastify.js, Mysql.js, SlashManager.js, Status.js, SystemStatus.js[39m ] 
+[ [36mEventos[39m ]  [32mFastify[39m Iniciando http...
+[ [36mEventos[39m ]  [31mMysql[39m desativado. Usando Database Interno.
+[ [36mEventos[39m ]  [32mSlash-Manager[39m  Iniciando Slash.
+[ [36mEventos[39m ]  [32mSlash[39m - [35mAdministradores[39m = [36m8[39m [ [32m/ban, /kick, /limparcanal, /limparchat, /lock, /modolento, /unban, /unlock[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mAinda Não Sei[39m = [36m1[39m [ [32m/wash[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mMaster[39m = [36m3[39m [ [32m/criarservidor, /dashboard, /registrar[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mMembros[39m = [36m4[39m [ [32m/ajuda, /info, /ping, /userinfo[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mMúsica[39m = [36m1[39m [ [32m/play[39m ] 
+[ [36mEventos[39m ]  [32mSlash[39m - [35mPterodactyl[39m = [36m1[39m [ [32m/pterostatus[39m ] 
+[ [36mEventos[39m ]  [32mStatus[39m Ativando...
+[ [36mEventos[39m ]  [31mSystemStatus[39m desativado.
+[ [32mMysql.js[39m ] Iniciou com Sucesso.
+[ [32mSlashManager.js[39m ] Iniciou com Sucesso.
+[ [32mStatus.js[39m ] Iniciou com Sucesso.
+[ [32mSystemStatus.js[39m ] Iniciou com Sucesso.
+Ready! Logged in as HTTP://localhost:24206
+[ [32mFastify.js[39m ] Iniciou com Sucesso.
+[ [33mC[39m[32ml[39m[34mi[39m[35me[39m[31mn[39m[33mt[39m ] Iniciando eventos de inicialização.
