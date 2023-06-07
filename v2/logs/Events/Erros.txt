@@ -1,0 +1,946 @@
+[31/05/2023, 00:19:50] Erro no Evento "slash.js" , Erro: Error: Cannot find module './slashs/ping.js'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\events\slash.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\init\event.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\events\slash.js:10:29)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\init\event.js:15:36)
+    at Client.emit (node:events:513:28)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+[31/05/2023, 01:28:10] Erro no Evento "LoadSlash.js" , Erro: Error: ENOENT: no such file or directory, scandir './src/slashs'
+    at Object.readdirSync (node:fs:1452:3)
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadSlash.js:8:33)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:16:36)
+    at Client.emit (node:events:513:28)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+    at WebSocketShard.emit (node:events:513:28)
+    at WebSocketShard.checkReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketShard.js:181:12)
+    at WebSocketShard.gotGuild (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketShard.js:155:10)
+[31/05/2023, 02:07:28] Erro no Evento "LoadSlash.js" , Erro: TypeError: Cannot read properties of undefined (reading 'Active')
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadSlash.js:13:26)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:16:36)
+    at Client.emit (node:events:513:28)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+    at WebSocketShard.emit (node:events:513:28)
+    at WebSocketShard.checkReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketShard.js:181:12)
+    at WebSocketShard.gotGuild (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketShard.js:155:10)
+    at WebSocketManager.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:240:15)
+[31/05/2023, 02:17:01] Erro no Evento "LoadSlash.js" , Erro: Error: ENOENT: no such file or directory, scandir './Index/SlashManager'
+    at readdirSync (node:fs:1452:3)
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadSlash.js:14:36)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:16:36)
+    at Client.emit (node:events:513:28)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+    at WebSocketShard.emit (node:events:513:28)
+    at WebSocketShard.checkReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketShard.js:181:12)
+    at WebSocketShard.gotGuild (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketShard.js:155:10)
+[31/05/2023, 02:17:21] Erro no Evento "LoadSlash.js" , Erro: Error: ENOENT: no such file or directory, scandir './Index/SlashFolder'
+    at readdirSync (node:fs:1452:3)
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadSlash.js:14:36)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:16:36)
+    at Client.emit (node:events:513:28)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+    at WebSocketShard.emit (node:events:513:28)
+    at WebSocketShard.checkReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketShard.js:181:12)
+    at WebSocketShard.gotGuild (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketShard.js:155:10)
+[31/05/2023, 02:17:49] Erro no Evento "LoadSlash.js" , Erro: Error: ENOENT: no such file or directory, scandir './Index/SlashFolder'
+    at readdirSync (node:fs:1452:3)
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadSlash.js:14:36)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:16:36)
+    at Client.emit (node:events:513:28)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+    at WebSocketShard.emit (node:events:513:28)
+    at WebSocketShard.checkReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketShard.js:181:12)
+    at WebSocketShard.gotGuild (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketShard.js:155:10)
+[31/05/2023, 02:17:56] Erro no Evento "LoadSlash.js" , Erro: Error: ENOENT: no such file or directory, scandir './Index/SlashFolder'
+    at readdirSync (node:fs:1452:3)
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadSlash.js:14:36)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:16:36)
+    at Client.emit (node:events:513:28)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+    at WebSocketShard.emit (node:events:513:28)
+    at WebSocketShard.checkReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketShard.js:181:12)
+    at WebSocketShard.gotGuild (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketShard.js:155:10)
+[31/05/2023, 02:19:40] Erro no Evento "LoadSlash.js" , Erro: Error: ENOENT: no such file or directory, scandir './Index/SlashFolder'
+    at readdirSync (node:fs:1452:3)
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadSlash.js:12:36)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:16:36)
+    at Client.emit (node:events:513:28)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+    at WebSocketShard.emit (node:events:513:28)
+    at WebSocketShard.checkReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketShard.js:181:12)
+    at WebSocketShard.gotGuild (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketShard.js:155:10)
+[31/05/2023, 02:19:55] Erro no Evento "LoadSlash.js" , Erro: TypeError: (intermediate value).setToken(...) is not a function
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadSlash.js:30:17)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:16:36)
+    at Client.emit (node:events:513:28)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+    at WebSocketShard.emit (node:events:513:28)
+    at WebSocketShard.checkReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketShard.js:181:12)
+    at WebSocketShard.gotGuild (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketShard.js:155:10)
+    at WebSocketManager.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:240:15)
+[31/05/2023, 02:23:01] Erro no Evento "LoadSlash.js" , Erro: TypeError: (intermediate value).setToken(...) is not a function
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadSlash.js:30:17)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:16:36)
+    at Client.emit (node:events:513:28)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+    at WebSocketShard.emit (node:events:513:28)
+    at WebSocketShard.checkReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketShard.js:181:12)
+    at WebSocketShard.gotGuild (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketShard.js:155:10)
+    at WebSocketManager.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:240:15)
+[31/05/2023, 12:43:40] Erro no Evento "LoadSlash.js" , Erro: C:\Users\Drylian\Documents\GitHub\ALT-bot\src\SlashFolder\Membros\ping.js:10
+    const ping
+          ^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadSlash.js:20:37)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:16:36)
+[31/05/2023, 15:28:42] Erro no Evento "LoadStatus.js" , Erro: TypeError: Cannot read properties of undefined (reading 'split')
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadStatus.js:20:52)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:16:36)
+    at Client.emit (node:events:525:35)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+    at WebSocketShard.emit (node:events:513:28)
+    at WebSocketShard.checkReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketShard.js:181:12)
+    at WebSocketShard.gotGuild (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketShard.js:155:10)
+    at WebSocketManager.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:240:15)
+[31/05/2023, 15:28:56] Erro no Evento "LoadStatus.js" , Erro: TypeError: Cannot read properties of undefined (reading 'Status')
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadStatus.js:21:45)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:16:36)
+    at Client.emit (node:events:525:35)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+    at WebSocketShard.emit (node:events:513:28)
+    at WebSocketShard.checkReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketShard.js:181:12)
+    at WebSocketShard.gotGuild (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketShard.js:155:10)
+    at WebSocketManager.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:240:15)
+[31/05/2023, 15:41:43] Erro no Evento "LoadExpress.js" , Erro: TypeError: Cannot read properties of undefined (reading 'Fastify')
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js:13:22)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:24:28)
+    at Client.emit (node:events:525:35)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+    at WebSocketShard.emit (node:events:513:28)
+    at WebSocketShard.checkReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketShard.js:181:12)
+    at WebSocketShard.gotGuild (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketShard.js:155:10)
+    at WebSocketManager.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:240:15)
+[31/05/2023, 15:42:27] Erro no Evento "LoadExpress.js" , Erro: Error: Cannot find module './Setup/routes'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js:21:22)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:24:28)
+    at Client.emit (node:events:525:35)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+[31/05/2023, 15:49:01] Erro no Evento "LoadExpress.js" , Erro: Error: Cannot find module './Setup/routes'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js:21:22)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:24:28)
+    at Client.emit (node:events:525:35)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+[31/05/2023, 15:52:23] Erro no Evento "LoadExpress.js" , Erro: Error: Cannot find module './Setup/routes'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js:21:22)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:24:28)
+    at Client.emit (node:events:525:35)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+[31/05/2023, 15:52:27] Erro no Evento "LoadExpress.js" , Erro: Error: Cannot find module './Setup/routes'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js:21:22)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:24:28)
+    at Client.emit (node:events:525:35)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+[31/05/2023, 15:52:46] Erro no Evento "LoadExpress.js" , Erro: Error: Cannot find module './Setup/routes'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js:21:22)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:24:28)
+    at Client.emit (node:events:525:35)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+[31/05/2023, 16:00:24] Erro no Evento "LoadExpress.js" , Erro: Error: Cannot find module './Setup/routes'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js:21:22)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:24:28)
+    at Client.emit (node:events:525:35)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+[31/05/2023, 16:01:08] Erro no Evento "LoadExpress.js" , Erro: Error: Cannot find module './Setup/routes'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js:21:22)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:24:28)
+    at Client.emit (node:events:525:35)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+[31/05/2023, 16:01:29] Erro no Evento "LoadExpress.js" , Erro: Error: Cannot find module './Setup/routes'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js:21:22)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:24:28)
+    at Client.emit (node:events:525:35)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+[31/05/2023, 16:01:36] Erro no Evento "LoadExpress.js" , Erro: Error: Cannot find module './Setup/routes'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js:21:22)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:24:28)
+    at Client.emit (node:events:525:35)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+[31/05/2023, 16:01:44] Erro no Evento "LoadExpress.js" , Erro: Error: Cannot find module './Setup/routes'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js:21:22)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:24:28)
+    at Client.emit (node:events:525:35)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+[31/05/2023, 16:04:52] Erro no Evento "LoadExpress.js" , Erro: Error: Cannot find module './Setup/routes'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js:21:22)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:24:28)
+    at Client.emit (node:events:525:35)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+[31/05/2023, 16:05:48] Erro no Evento "LoadExpress.js" , Erro: Error: Cannot find module './Setup/routes'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js:21:22)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:24:28)
+    at Client.emit (node:events:525:35)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+[31/05/2023, 16:07:06] Erro no Evento "LoadExpress.js" , Erro: Error: Cannot find module './Setup/routes'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js:21:22)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:24:28)
+    at Client.emit (node:events:525:35)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+[31/05/2023, 16:15:00] Erro no Evento "LoadExpress.js" , Erro: Error: Cannot find module './Setup/routes'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js:21:22)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:24:28)
+    at Client.emit (node:events:525:35)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+[31/05/2023, 16:15:03] Erro no Evento "LoadExpress.js" , Erro: Error: Cannot find module './Setup/routes'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js:21:22)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:24:28)
+    at Client.emit (node:events:525:35)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+[31/05/2023, 16:20:57] Erro no Evento "LoadExpress.js" , Erro: Error: Cannot find module './Setup/routes'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\LoadExpress.js:22:22)
+    at Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:24:28)
+    at Client.emit (node:events:525:35)
+    at WebSocketManager.triggerClientReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:387:17)
+    at WebSocketManager.checkShardsReady (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:370:10)
+    at WebSocketShard.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:200:16)
+[04/06/2023, 22:37:43] Erro no Evento "LoadSlash.js" , Erro: TypeError: source.load is not a function
+    at loadSource (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:14:20)
+    at C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:23:13
+    at loadBotSource (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:28:5)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js:7:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+[04/06/2023, 22:39:15] Erro no Evento "LoadSlash.js" , Erro: Error: Cannot find module '../SlashFolder/Membros/ping.js'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\Core\LoadSlash.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.load (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\Core\LoadSlash.js:21:33)
+    at loadSource (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:14:20)
+    at C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:23:13
+    at loadBotSource (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:28:5)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js:7:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+[04/06/2023, 22:48:37] Erro no Evento "ActivityType.js" , Erro: TypeError: source.load is not a function
+    at loadSource (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:14:20)
+    at C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:23:13
+    at loadBotSource (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:28:5)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js:7:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+[04/06/2023, 22:50:08] Erro no Evento "Load-Status.js" , Erro: TypeError: source.load is not a function
+    at loadSource (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:14:20)
+    at C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:23:13
+    at loadBotSource (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:28:5)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js:7:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+[04/06/2023, 22:50:35] Erro no Evento "Load-Status.js" , Erro: TypeError: Cannot read properties of null (reading 'setPresence')
+    at Object.load (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\Core\Load-Status.js:28:21)
+    at loadSource (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:14:20)
+    at C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:23:13
+    at loadBotSource (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:28:5)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js:7:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+[05/06/2023, 00:24:10] Erro no Evento "InteractionCreate.js" , Erro: DiscordAPIError[10062]: Unknown interaction
+    at handleErrors (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\@discordjs\rest\dist\index.js:640:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async BurstHandler.runRequest (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\@discordjs\rest\dist\index.js:736:23)
+    at async REST.request (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\@discordjs\rest\dist\index.js:1387:22)
+    at async ChatInputCommandInteraction.reply (C:\Users\Drylian\Documents\GitHub\ALT-bot\node_modules\discord.js\src\structures\interfaces\InteractionResponses.js:111:5)
+    at async Object.run (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\Discord\InteractionCreate.js:28:21)
+    at async Client.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadEvents.js:15:9)
+[05/06/2023, 00:48:12] Erro no Evento "LoadSlash.js" , Erro: C:\Users\Drylian\Documents\GitHub\ALT-bot\src\SlashFolder\Membros\ping.js:9
+    const ping = Date.now() - int.createdTimestamp
+    ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.load (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\Core\LoadSlash.js:20:33)
+    at loadSource (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:14:20)
+    at C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:23:13
+    at loadBotSource (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:28:5)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js:7:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+[05/06/2023, 00:50:47] Erro no Evento "LoadSlash.js" , Erro: ReferenceError: int is not defined
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\SlashFolder\Membros\ping.js:4:27)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.load (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\Core\LoadSlash.js:20:33)
+    at loadSource (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:14:20)
+    at C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:23:13
+    at loadBotSource (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:28:5)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js:7:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+[05/06/2023, 19:41:58] Erro no Evento "LoadSlash.js" , Erro: Error: Cannot find module '../Discord/InteractionCreate'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\Core\LoadSlash.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js
+- C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\Core\LoadSlash.js:4:27)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at loadSource (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:13:22)
+    at C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:23:13
+    at loadBotSource (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:28:5)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js:7:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+[05/06/2023, 19:47:07] Erro no Evento "LoadSlash.js" , Erro: C:\Users\Drylian\Documents\GitHub\ALT-bot\src\SlashFolder\Membros\ping.js:16
+      async MakeEmbed(embedData);
+            ^^^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.load (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\Core\LoadSlash.js:20:33)
+    at loadSource (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:14:20)
+    at C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:23:13
+    at loadBotSource (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:28:5)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js:7:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+[05/06/2023, 22:38:37] Erro no Evento "LoadSlash.js" , Erro: C:\Users\Drylian\Documents\GitHub\ALT-bot\src\SlashFolder\Membros\ping.js:2
+const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
+        ^
+
+SyntaxError: Identifier 'SlashCommandBuilder' has already been declared
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.load (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Events\Core\LoadSlash.js:20:33)
+    at loadSource (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:14:20)
+    at C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:23:13
+    at loadBotSource (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\Init\LoadSource.js:28:5)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\ALT-bot\src\bot.js:7:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+[06/06/2023, 00:14:14] Erro no Evento "LoadSlash.js" , Erro: TypeError: source.load is not a function
+    at loadSource (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Init\LoadSource.js:14:20)
+    at C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Init\LoadSource.js:23:13
+    at loadBotSource (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Init\LoadSource.js:28:5)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\bot.js:7:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+[06/06/2023, 00:58:23] Erro no Evento "LoadSlash.js" , Erro: Error: Cannot find module '@discordjs/voice'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\steam\StopSteam.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\SubCommands.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\play.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Events\Core\LoadSlash.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Init\Event.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\steam\StopSteam.js:1:32)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\SubCommands.js:1:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+[06/06/2023, 00:58:59] Erro no Evento "LoadSlash.js" , Erro: Error: Cannot find module '@discordjs/voice'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\steam\StopSteam.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\SubCommands.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\play.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Events\Core\LoadSlash.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Init\Event.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\steam\StopSteam.js:1:32)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\SubCommands.js:1:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+[06/06/2023, 10:15:37] Erro no Evento "LoadSlash.js" , Erro: Error: Cannot find module '@discordjs/voice'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\steam\StopSteam.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\SubCommands.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\play.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Events\Core\LoadSlash.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Init\Event.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\steam\StopSteam.js:1:32)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\SubCommands.js:1:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+[06/06/2023, 10:17:43] Erro no Evento "LoadSlash.js" , Erro: Error: Cannot find module '@discordjs/voice'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\steam\StopSteam.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\SubCommands.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\play.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Events\Core\LoadSlash.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Init\Event.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\steam\StopSteam.js:1:32)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\SubCommands.js:1:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+[06/06/2023, 10:17:48] Erro no Evento "LoadSlash.js" , Erro: Error: Cannot find module '@discordjs/voice'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\steam\StopSteam.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\SubCommands.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\play.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Events\Core\LoadSlash.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Init\Event.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\steam\StopSteam.js:1:32)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\SubCommands.js:1:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+[06/06/2023, 10:19:40] Erro no Evento "LoadSlash.js" , Erro: Error: Cannot find module '@discordjs/voice'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\steam\StopSteam.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\SubCommands.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\play.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Events\Core\LoadSlash.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Init\Event.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\steam\StopSteam.js:1:32)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\SubCommands.js:1:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+[06/06/2023, 10:19:49] Erro no Evento "LoadSlash.js" , Erro: Error: Cannot find module '@discordjs/voice'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\steam\StopSteam.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\SubCommands.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\play.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Events\Core\LoadSlash.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Init\Event.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\steam\StopSteam.js:1:32)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\SubCommands.js:1:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+[06/06/2023, 10:19:55] Erro no Evento "LoadSlash.js" , Erro: Error: Cannot find module '@discordjs/voice'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\steam\StopSteam.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\SubCommands.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\play.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Events\Core\LoadSlash.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Init\Event.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\steam\StopSteam.js:1:32)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\SubCommands.js:1:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+[06/06/2023, 10:20:02] Erro no Evento "LoadSlash.js" , Erro: Error: Cannot find module '@discordjs/voice'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\steam\StopSteam.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\SubCommands.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\play.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Events\Core\LoadSlash.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Init\Event.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\steam\StopSteam.js:1:32)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\SubCommands.js:1:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+[06/06/2023, 10:22:13] Erro no Evento "LoadSlash.js" , Erro: Error: Cannot find module '@discordjs/voice'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\steam\StopSteam.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\SubCommands.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\play.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Events\Core\LoadSlash.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Init\Event.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\steam\StopSteam.js:1:32)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\SubCommands.js:1:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+[06/06/2023, 10:23:50] Erro no Evento "LoadSlash.js" , Erro: Error: Cannot find module '@discordjs/voice'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\steam\StopSteam.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\SubCommands.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\play.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Events\Core\LoadSlash.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Init\Event.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\steam\StopSteam.js:1:32)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\SubCommands.js:1:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+[06/06/2023, 10:23:55] Erro no Evento "LoadSlash.js" , Erro: Error: Cannot find module '@discordjs/voice'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\steam\StopSteam.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\SubCommands.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\play.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Events\Core\LoadSlash.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Init\Event.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\steam\StopSteam.js:1:32)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\SubCommands.js:1:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+[06/06/2023, 10:30:17] Erro no Evento "LoadSlash.js" , Erro: Error: Cannot find module '@discordjs/voice'
+Require stack:
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\steam\StopSteam.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\SubCommands.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\play.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Events\Core\LoadSlash.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\Init\Event.js
+- C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\bot.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\steam\StopSteam.js:1:32)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\SlashFolder\Radio\radio\utils\SubCommands.js:1:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+[06/06/2023, 14:05:18] Erro no Evento "Falha ao Registrar o Comando Slash:" , Erro: TypeError: Cannot read properties of null (reading 'id')
+    at C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\handler\SlashController.js:45:60
+    at loadSlashRest (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\handler\SlashController.js:54:7)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\bot.js:19:5)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+[06/06/2023, 14:06:10] Erro no Evento "Falha ao Registrar o Comando Slash:" , Erro: TypeError: Cannot read properties of null (reading 'id')
+    at C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\handler\SlashController.js:45:60
+    at loadSlashRest (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\handler\SlashController.js:54:7)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\bot.js:19:5)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+[06/06/2023, 14:11:25] Erro no Evento "Falha ao Registrar o Comando Slash:" , Erro: TypeError: Cannot read properties of null (reading 'id')
+    at C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\handler\SlashController.js:48:60
+    at loadSlashRest (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\handler\SlashController.js:57:7)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\bot.js:19:5)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+[06/06/2023, 14:12:11] Erro no Evento "Falha ao Registrar o Comando Slash:" , Erro: ReferenceError: clientId is not defined
+    at C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\handler\SlashController.js:48:48
+    at loadSlashRest (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\handler\SlashController.js:57:7)
+    at Object.<anonymous> (C:\Users\Drylian\Documents\GitHub\Core-ALT\v2\src\bot.js:19:5)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+[06/06/2023, 16:23:51] Erro no Evento "ActivityType.js" , Erro: undefined
+[06/06/2023, 16:23:51] Erro no Evento "guildMemberAdd.js" , Erro: undefined
+[06/06/2023, 16:23:51] Erro no Evento "guildMemberRemove.js" , Erro: undefined
+[06/06/2023, 16:26:02] Erro no Evento "ActivityType.js" , Erro: undefined
+[06/06/2023, 16:26:02] Erro no Evento "guildMemberAdd.js" , Erro: undefined
+[06/06/2023, 16:26:02] Erro no Evento "guildMemberRemove.js" , Erro: undefined

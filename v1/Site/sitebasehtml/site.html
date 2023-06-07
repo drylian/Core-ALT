@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Site de Vendas</title>
+    <link rel="stylesheet" href="css/default.css" id="theme">
+    <script src="js/site.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar close">
+            <div class="logo-content">
+                <img src="./img/logo.png">
+                <h1>Auto Bot</h1>
+                <button class="toggle-button-mobile">&#9776;</button>
+            </div>
+            <a href="#sobre"><i class="material-icons">home</i> Sobre Nós</a>
+            <a href="#bots"><i class="material-icons">shopping_cart</i> Compre Bots</a>
+            <a href="#valores"><i class="material-icons">person</i> Bots Valores</a>
+            <a href="#clientes"><i class="material-icons">person</i> Automações</a>
+            <a href="#interfaces"><i class="material-icons">person</i> Interfaces Web</a>
+        </div>
+
+        <div class="content">
+            <div class="header">
+                <button class="toggle-button">&#9776;</button>
+                <h1>Shop Bots & Automações</h1>
+                <div class="theme-selector">
+                    <label for="theme-select">Tema</label>
+                    <select id="theme-select" onchange="changeTheme(this.value)">
+                        <option value="default">Padrão</option>
+                        <option value="light">Claro</option>
+                        <option value="dark">Escuro</option>
+                        <option value="orange">Laranja</option>
+                    </select>
+                </div>
+            </div>
+            <div class="content-container">
+                <h2>Conteúdo da Página</h2>
+                <p>Este é o conteúdo principal da página de vendas.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
