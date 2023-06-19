@@ -1,9 +1,15 @@
+const { Collection } = require('discord.js');
 const { client, config } = require('alter');
-const { loadSlashRest, loadSlashCommands } = require("./handler/SlashController")
+const { loadSlashRest, loadSlashCommands } = require("./Handler/Slash")
 const loadExpress = require('./Express/LoadExpress');
-const loadEvents = require('./handler/EventController');
-// Inicia os Novos Eventos
-loadEvents(client);
+
+// Inicia os Collections
+client.events = new Collection();
+client.slash = new Collection();
+
+// Inicia o sistema de eventos
+require(`./Handler/Event`)(client, config);
+
 // Inicia o front End
 if (config.express.active === true) {
     loadExpress(client);
@@ -19,4 +25,10 @@ if (config.slashtype === 'guild'|| config.slastype === 'normal') {
     loadSlashRest(client);
 }
 
-client.login(config.token);
+// Loga o bot
+client.login(config.token)
+  .catch((err) => {
+    console.error("[ CRASH ] Algo deu errado ao se conectar ao seu bot...");
+    console.error("[ CRASH ] Erro da API do Discord:" + err);
+    return process.exit();
+  });

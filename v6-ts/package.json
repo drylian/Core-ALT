@@ -1,0 +1,25 @@
+{
+  "name": "alter",
+  "version": "6.0.0b",
+  "description": "Não acredito que esse bot chegou nesse nivel",
+  "main": "unix.js",
+  "exports": {
+    ".": "./alter/package.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Drylian/Alternight 2023",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "colors": "^1.4.0",
+    "connect-flash": "^0.1.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "nodemon": "^2.0.22",
+    "pm2": "^5.3.0",
+    "yargs": "^17.7.2"
+  }
+}

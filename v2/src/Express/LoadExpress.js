@@ -4,7 +4,7 @@ const { config, expresss } = require('alter');
 const express = require('express');
 const path = require('path');
 
-const buildPath = path.join(__dirname, 'Site');
+const buildPath = path.join(__dirname, 'Webpanel');
 
 function loadExpress() {
     try {
