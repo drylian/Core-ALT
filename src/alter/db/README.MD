@@ -40,3 +40,6 @@ A função `db.imp('campo', './arquivo.json')` é utilizada para importar dados 
 
 A função `db.dropall('chave do database')` é utilizada para criar um backup e zerar completamente o banco de dados, criando um novo banco de dados vazio.
 
+```js
+const teste = require('teste')
+```
