@@ -1,37 +1,18 @@
-const { initTokens } = require('./alter/modules/express/ttokens');
-const { StartServer } = require('./alter/modules/startup/startServer');
-const { DevServer } = require('./alter/modules/startup/DevServer');
-const { WebSetup } = require('./alter/modules/startup/start-type/SetupServer');
-const { pmLogger } = require('./alter/modules/startup/PMBus')
-// Carrega os token temporários na inicialização
-initTokens();
-// inicia o logger do pm
-pmLogger();
-const argv = require('yargs')
-    .option('dev', {
-        alias: 'd',
-        describe: 'Execute modo Desenvolvimento.',
-        type: 'boolean',
-        default: false
-    })
-    .option('setup', {
-        alias: 's',
-        describe: 'Execute o processo de configuração.',
-        type: 'boolean',
-        default: false
-    })
-    .option('port', {
-        alias: 'p',
-        describe: 'Porta para o servidor.',
-        type: 'number',
-        default: 3000
-    })
-    .argv;
+/*
+ * Alternight 2023 - Todos os direitos reservados.
+ * configuração principal para carregar os arquivos do painel
+ * Responsavel pelo gerenciamente, executação e todos os tipos de função.
+ *
+ */
 
-if (argv.dev) {
-    DevServer();
-} else if (argv.setup) {
-    WebSetup(argv.port);
-} else {
-    StartServer();
-}
+// Ler entrada do usuário a partir do terminal
+process.stdin.on('data', (data) => {
+    const input = data.toString().trim();
+    console.log(`Você digitou: ${input}`);
+});
+
+// Exibir mensagem no terminal
+console.log('Bem-vindo!');
+
+// Enviar saída para o terminal
+process.stdout.write('Digite algo: ');
