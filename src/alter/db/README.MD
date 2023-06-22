@@ -41,7 +41,7 @@ A função `db.imp('nome do campo', 'local/do/arquivo.json')` é utilizada para 
 ### Exemplos de Uso
 
 ```js
-const db = require('./nome-do-arquivo.js');
+const db = require('./JDB.js');
 
 // Deletar um valor dentro do JSON do campo selecionado
 db.del('campo', { valor: 'algo' });
