@@ -20,26 +20,44 @@ A função `db.get('campo')` é utilizada para obter o JSON do campo especificad
 
 ## Uso do db.del()
 
-A função `db.del('campo', 'chave')` é utilizada para excluir uma chave específica dentro do campo. É possível fornecer um caminho mais específico, por exemplo, `db.del('campo', 'chave:algo')`, para deletar uma chave aninhada dentro do campo.
+A função `db.del('campo', { valor: 'algo' })` deleta um valor dentro do JSON do campo selecionado.
 
 ## Uso do db.drop()
 
 A função `db.drop('campo')` é utilizada para excluir completamente um campo do banco de dados.
 
+## Uso do db.dropall()
+
+A função `db.dropall('Chave do database')` deleta o banco de dados completamente. Um backup é carregado quando o banco de dados é deletado.
+
 ## Uso do db.exp()
 
-A função `db.exp('campo', './arquivo.json')` é utilizada para exportar os dados do campo especificado para um arquivo externo. O formato de exportação é limitado a ".json".
+A função `db.exp('campo', './local/do/arquivo.json')` é utilizada para exportar o JSON do campo especificado para fora do banco de dados. Pode ser usado para exportar dados para clientes.
 
 ## Uso do db.imp()
 
-A função `db.imp('campo', './arquivo.json')` é utilizada para importar dados de um arquivo externo para o banco de dados interno. O formato de importação é limitado a ".json".
+A função `db.imp('nome do campo', 'local/do/arquivo.json')` é utilizada para importar um JSON externo para dentro do banco de dados, onde o arquivo será inserido no campo selecionado.
 
-## Uso do db.dropall()
-
-**AVISO: Esta lógica irá criar um backup e zerar completamente o banco de dados, criando um novo banco de dados vazio.**
-
-A função `db.dropall('chave do database')` é utilizada para criar um backup e zerar completamente o banco de dados, criando um novo banco de dados vazio.
+### Exemplos de Uso
 
 ```js
-const teste = require('teste')
-```
+const db = require('./nome-do-arquivo.js');
+
+// Deletar um valor dentro do JSON do campo selecionado
+db.del('campo', { valor: 'algo' });
+
+// Excluir completamente um campo do banco de dados
+db.drop('campo');
+
+// Deletar o banco de dados completamente (backup é carregado)
+db.dropall('Chave do database');
+
+// Exportar o JSON do campo para um arquivo externo
+db.exp('campo', './local/do/arquivo.json');
+
+// Obter o JSON do campo selecionado
+const campoData = db.get('campo');
+console.log(campoData);
+
+// Importar um JSON externo para dentro do banco de dados
+db.imp('nome do campo', 'local/do/arquivo.json');
