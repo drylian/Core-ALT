@@ -1,0 +1,126 @@
+<%- await include('../partials/top.ejs') %>
+<div class="nav-horizontal">
+    <ul>
+      <li>
+        <a href="/admin/settings" class="nav-horizontal-lista"><i class='bx bx-cog'></i> Configurações</a>
+      </li>
+      <li>
+        <a href="/admin/settings/style" class="nav-horizontal-lista"><i class='bx bxl-tailwind-css'></i> Estilos</a>
+      </li>
+      <li>
+        <a href="/admin/settings/alert" class="nav-horizontal-lista"><i class='bx bx-chat'></i></i> Alertas</a>
+      </li>
+      <li>
+        <a href="/admin/settings/discord" class="nav-horizontal-lista"><i class='bx bxl-discord-alt'></i> Discord</a>
+      </li>
+    </ul>
+  </div>
+
+  <div style="margin-top: 10px;"></div>
+    <!-- admin/settings/index.ejs -->
+    <!-- Mais uma daquelas coisas que simplesmente não fazem sentido
+    Não remova esse div id, remove-lo faz o switch do expires não funcionar -->
+ <div id="expires"></div>
+    <!-- Configuração do JDB -->
+    <div class="box-type-2">
+        <div class="header">
+            <h2>Configurações de Alertas</h2>
+            <p>seta alertas programados pelos administradores.</p>
+        </div>
+        <div class="content">
+            <div class="left-side">
+                <form action="/admin/settings/alert" method="post">
+
+                    <div style="margin-top: 10px;"></div>
+
+                    <div class="command">
+                        <label for="message">Mensagem:</label>
+                        <input class="alert-input" type="text" id="message" name="message"
+                            value="<%= alert_system.message %>" class="text-input">
+                        <p class="command-description">define a mensagem que será mostrada no sistema de alerta.</p>
+                    </div>
+
+                    <div class="command">
+                        <label for="color">Cor da borda do alerta:</label>
+                        <input type="color" id="color" name="color" value="<%= alert_system.color %>"
+                            class="text-input">
+                        <p class="command-description">define a cor que será mostrada no sistema de alerta.</p>
+                    </div>
+
+                    <div class="command">
+                        <label for="backgroundColor">Cor de fundo do alerta:</label>
+                        <input type="color" id="backgroundColor" name="backgroundColor"
+                            value="<%= alert_system.backgroundColor %>" class="text-input">
+                        <p class="command-description">define a cor do fundo que será mostrado no sistema de alerta.</p>
+                    </div>
+            </div>
+            <div class="right-side">
+
+                <div style="margin-top: 10px;"></div>
+
+                <div class="command">
+                    <div class="Form-group">
+                        <label for="admin">Será vista no painel Administrativo?</label>
+                        <label class="toggle-switch right <% if (alert_system.admin === 'on') { %> active <% } %>">
+                            <input type="checkbox" id="admin" name="admin" <% if (alert_system.admin==='on' ) { %>
+                            checked <% } %> onchange="toggleSwitch('admin')">
+                                <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <p class="command-description">Fará com que a mensagem de alerta seja vista no painel
+                        administrativo.</p>
+                </div>
+
+                <div class="command">
+                    <div class="Form-group">
+                        <label for="client">Será vista no painel do client?</label>
+                        <label class="toggle-switch right <% if (alert_system.client === 'on') { %> active <% } %>">
+                            <input type="checkbox" id="client" name="client" <% if (alert_system.client==='on' ) { %>
+                            checked <% } %> onchange="toggleSwitch('client')">
+                                <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <p class="command-description">Fará com que a mensagem de alerta seja vista no painel do cliente.
+                    </p>
+                </div>
+
+                <div class="command">
+                    <div class="Form-group">
+                        <label for="expires">Esse alerta tem tempo de expiração?</label>
+                        <label class="toggle-switch right <% if (alert_system.expires !== 'off') { %> active <% } %>">
+                            <input type="checkbox" id="expires" name="expires" onclick="alertSwitch()">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+
+                    <p class="command-description">Fará com que a mensagem de alerta seja vista no painel do cliente.
+                    </p>
+                    <div class="Form-group" id="expiresDateContainer" style="display:none">
+                        <label for="expiresDate">Data de Expiração:</label>
+                        <input type="datetime-local" id="expiresDate" name="expiresDate">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <input type="submit" value="Salvar configurações de alerta" class="button">
+            </form>
+        </div>
+    </div>
+    <div style="margin-top: 40px;"></div>
+    <script>async function alertSwitch() {
+            var switchElement = document.getElementById("expires");
+            var expiresDateContainer = document.getElementById("expiresDateContainer");
+
+            if (switchElement.checked) {
+                expiresDateContainer.style.display = "none";
+            } else {
+                expiresDateContainer.style.display = "block";
+            }
+
+            // Adicionar lógica para alternar o estado do switch
+            switchElement.checked = !switchElement.checked;
+
+            // Faça algo com o valor de "switchValue" (por exemplo, atribuir ao campo de dados ou enviar para o servidor)
+        }</script>
+    <%- await include('../partials/footer.ejs') %>

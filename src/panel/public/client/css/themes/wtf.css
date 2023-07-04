@@ -1,0 +1,272 @@
+body {
+  color: #ffffff;
+  background: linear-gradient(45deg, #000000, #262626, #4d4d4d);
+  background-size: 400% 400%;
+  animation: gradientAnimation 20s ease infinite;
+}
+
+.container {
+  color: #ffffff;
+}
+
+h1 {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  animation: textShadowAnimation 3s ease-in-out infinite alternate;
+}
+
+.content {
+  color: #ffffff;
+  animation: contentAnimation 5s ease infinite;
+}
+
+.content h2 {
+  color: #ffffff;
+  animation: textAnimation 2s ease-in-out infinite alternate;
+}
+
+.box {
+  color: #808080;
+  background-color: rgba(128, 128, 128, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  animation: boxAnimation 3s ease-in-out infinite alternate;
+}
+
+.box.left {
+  color: #808080;
+  animation: boxLeftAnimation 4s ease-in-out infinite alternate;
+}
+
+.box.right {
+  color: #808080;
+  animation: boxRightAnimation 4s ease-in-out infinite alternate;
+}
+
+.box .text {
+  color: #ffffff;
+}
+
+.box h3 {
+  color: #ffffff;
+  animation: textAnimation 2s ease-in-out infinite alternate;
+}
+
+.box p {
+  color: #ffffff;
+  animation: textAnimation 2s ease-in-out infinite alternate;
+}
+
+.header h1 {
+  color: #ffffff;
+  animation: textAnimation 2s ease-in-out infinite alternate;
+}
+
+.header .social-links a {
+  color: #ffffff;
+}
+
+.header .theme-selector label {
+  color: #ffffff;
+}
+
+.header .theme-selector select {
+  color: #fffb00;
+}
+
+.header .theme-selector::after {
+  color: #e7d212;
+}
+
+.header .theme-selector option {
+  background-color: #1c1c1c;
+  color: #ffffff;
+}
+
+.header .theme-selector option:hover {
+  background-color: #ecb604;
+  color: #ffffff;
+}
+
+.header .theme-selector option:checked {
+  background-color: #808080;
+  color: #ffffff;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes textShadowAnimation {
+  0% {
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    text-shadow: 4px 4px 6px rgba(255, 255, 255, 0.7);
+  }
+  100% {
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  }
+}
+
+@keyframes contentAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes textAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes boxAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes boxLeftAnimation {
+  0% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes boxRightAnimation {
+  0% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.star {
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 50%;
+  animation: starAnimation 5s infinite;
+}
+
+@keyframes starAnimation {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-10px) scale(0.8);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.8;
+  }
+}
+
+.star:nth-child(1) {
+  top: 20%;
+  left: 20%;
+  width: 6px;
+  height: 6px;
+  animation-duration: 3s;
+}
+
+.star:nth-child(2) {
+  top: 30%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  animation-duration: 4s;
+}
+
+.star:nth-child(3) {
+  top: 70%;
+  left: 80%;
+  width: 5px;
+  height: 5px;
+  animation-duration: 5s;
+}
+
+.star:nth-child(4) {
+  top: 50%;
+  left: 10%;
+  width: 3px;
+  height: 3px;
+  animation-duration: 3.5s;
+}
+
+.star:nth-child(5) {
+  top: 90%;
+  left: 40%;
+  width: 7px;
+  height: 7px;
+  animation-duration: 4.5s;
+}
+
+
+.plan {
+  background-color: rgba(255, 255, 255, 0.26);
+}
+
+.plan-highlight {
+  background-color: #ff9900;
+  color: #fff;
+}
+
+.plan-content p {
+  color: #ffffff;
+}
+
+.buy-now {
+  background-color: #004b92;
+}
+
+.buy-now:hover {
+  background-color: #008ce9;
+}

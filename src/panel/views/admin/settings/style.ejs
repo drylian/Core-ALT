@@ -1,0 +1,111 @@
+<%- await include('../partials/top.ejs') %>
+    <!-- Aqui começa o conteudo da admin -->
+    <!-- Inicia o codigo aqui-->
+    <div class="nav-horizontal">
+        <ul>
+          <li>
+            <a href="/admin/settings" class="nav-horizontal-lista"><i class='bx bx-cog'></i> Configurações</a>
+          </li>
+          <li>
+            <a href="/admin/settings/style" class="nav-horizontal-lista"><i class='bx bxl-tailwind-css'></i> Estilos</a>
+          </li>
+          <li>
+            <a href="/admin/settings/alert" class="nav-horizontal-lista"><i class='bx bx-chat'></i></i> Alertas</a>
+          </li>
+          <li>
+            <a href="/admin/settings/discord" class="nav-horizontal-lista"><i class='bx bxl-discord-alt'></i> Discord</a>
+          </li>
+        </ul>
+      </div>
+    
+      <div style="margin-top: 10px;"></div>
+
+    <div style="margin-top: 10px;"></div>
+
+    <div class="box-type-1">
+        <div class="header">
+            <h2>Estilos do Painel</h2>
+            <p>Define os estilos usados no painel.</p>
+        </div>
+        <div class="content">
+            <div class="card-type-1">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="<%= style.icon %>" alt="Icon" />
+                    </div>
+                    <div class="card-info">
+                        <h3>
+                            <%= style.nome %>
+                        </h3>
+                        <p>
+                            <%= style.descricao %>
+                        </p>
+                    </div>
+                </div>
+                <div class="card-details">
+                    <p><strong>Criador:</strong>
+                        <%= style.criador %>
+                    </p>
+                    <p><strong>Temática:</strong>
+                        <%= style.tematica %>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box-type-1">
+        <div class="header">
+            <h2>Estilos do Painel</h2>
+            <p>Define os estilos usados no painel.</p>
+        </div>
+        <div class="content">
+            <div class="theme-details">
+                <h4>Nome do Estilo: <%= style.nome %>
+                </h4>
+                <p>Descrição: <%= style.descricao %>
+                </p>
+            </div>
+            <div class="theme-image" style="float: right;">
+                <img src="<%= style.icon %>" style="border-radius: 50%;">
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="box">
+        <form method="post" action="/admin/settings/style">
+            <h2>Selecionar tema:</h2>
+            <div class="theme-selector">
+                <% styleSet.forEach((tema)=> { %>
+                    <div class="theme-option <%= style.name === tema.nome ? 'selected' : '' %>"
+                        onclick="selectTheme('<%= tema.nome %>')">
+                        <h3>
+                            <%= tema.nome %>
+                        </h3>
+                        <p>
+                            <%= tema.descricao %>
+                        </p>
+                        <img src="<%= tema.icon %>">
+                    </div>
+                    <% }); %>
+            </div>
+            <input type="submit" value="Salvar" class="button">
+        </form>
+    </div>
+
+    <div class="box">
+        <h2>Enviar Tema</h2>
+        <p>Você pode enviar um arquivo "css" para usar ele de tema, mudando grande parte do estilos</p>
+        <form method="post" action="/admin/settings/upload/style" enctype="multipart/form-data" class="form">
+            <div class="input-file">
+                <div class="box">
+                    <span id="file-name">Nem um Arquivo selecionado <span id="file-name"></span></span>
+                </div>
+                <input type="file" name="styleFile" id="styleFile" class="input-file">
+                <label for="styleFile" class="input-file-label">Selecionar arquivo</label>
+            </div>
+            <input type="submit" value="Upload" class="button">
+        </form>
+    </div>
+    <!-- Aqui termina o conteudo da admin -->
+    <%- await include('../partials/footer.ejs') %>

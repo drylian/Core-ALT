@@ -1,0 +1,12 @@
+{
+    "nome": "Core",
+    "pasta":"core",
+    "icon":"https://cdn.discordapp.com/avatars/428660430412709889/b3e9258a5075f9d01702dcebd3c0264b",
+    "descricao":"Tema padrão usado pelo painel, Adicionado como padrão do sistema.",
+    "css": [
+        "css/default.css"
+    ],
+    "js": [
+        "js/sidebar.js"
+    ]
+}

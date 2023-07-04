@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo de HTML com CSS class root e animação com Anime.js</title>
+  <style>
+    /* Normalização para navegadores usando Normalize.css */
+    /* Você precisa baixar o Normalize.css e incluí-lo localmente */
+    /* Ou você pode usar um CDN como o exemplo abaixo */
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+    /* Estilos para a classe root */
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    .root {
+    }
+
+    /* Estilos para a sidebar */
+    .sidebar {
+      flex: 1;
+      background-color: lightgray;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      opacity: 0; /* Inicia com opacidade 0 */
+    }
+
+    .sidebar h3 {
+      margin-top: 0;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+
+    /* Estilos para o header */
+    .header {
+      flex: 4;
+      background-color: gray;
+      color: white;
+      padding: 20px;
+      opacity: 0; /* Inicia com opacidade 0 */
+    }
+
+    /* Estilos para a classe container */
+    .container {
+      flex: 5;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="root">
+    <div class="sidebar">
+      <h3>Barra Lateral</h3>
+      <ul>
+        <li><i class="material-icons">home</i> Início</li>
+        <li><i class="material-icons">person</i> Perfil</li>
+        <li><i class="material-icons">settings</i> Configurações</li>
+      </ul>
+    </div>
+    <div class="header">
+      <h1>Título do Cabeçalho</h1>
+      <p>Este é um exemplo de conteúdo no cabeçalho.</p>
+    </div>
+    <div class="container">
+      <!-- Conteúdo adicional aqui -->
+    </div>
+  </div>
+
+  <!-- Inclua a biblioteca Anime.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+  <!-- Seu código JavaScript para animação com Anime.js aqui -->
+  <script>
+    // Animação da barra lateral
+    anime({
+      targets: '.sidebar',
+      translateX: ['-100%', '0%'],
+      opacity: 1, /* Altera a opacidade para 1 */
+      duration: 1000,
+      easing: 'easeInOutSine'
+    });
+
+    // Animação do lado da barra lateral
+    anime({
+      targets: '.sidebar',
+      scaleY: [0, 1],
+      opacity: 1, /* Altera a opacidade para 1 */
+      duration: 1000,
+      delay: 500,
+      easing: 'easeInOutSine'
+    });
+
+    // Animação abaixo do cabeçalho
+    anime({
+      targets: '.container',
+      translateY: ['100%', '0%'],
+      duration: 1000,
+      easing: 'easeInOutSine'
+    });
+
+    // Animação do cabeçalho
+    anime({
+      targets: '.header',
+      opacity: 1, /* Altera a opacidade para 1 */
+      duration: 1000,
+      easing: 'easeInOutSine'
+    });
+  </script>
+</body>
+</html>
