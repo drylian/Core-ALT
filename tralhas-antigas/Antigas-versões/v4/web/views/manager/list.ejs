@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista de Bots</title>
+</head>
+<body>
+  <h1>Lista de Bots</h1>
+  <% if (processes.length === 0) { %>
+    <p>Nenhum bot iniciado.</p>
+  <% } else { %>
+    <ul>
+      <% processes.forEach((process) => { %>
+        <li>
+          <strong>Nome:</strong> <%= process.name %><br>
+          <strong>ID:</strong> <%= process.pm_id %><br>
+          <strong>Status:</strong> <%= process.pm2_env.status %><br>
+          <a href="/terminal/<%= process.name %>">Ver logs</a>
+          <% if (process.pm2_env.status === 'online') { %>
+            <a href="/stop/<%= process.name %>">Parar</a>
+            <a href="/restart/<%= process.name %>">Reiniciar</a>
+            <a href="/uptime/<%= process.name %>">Tempo de atividade</a>
+          <% } else { %>
+            <a href="/start/<%= process.name %>">Iniciar</a>
+          <% } %>
+        </li>
+      <% }); %>
+    </ul>
+  <% } %>
+  <a href="/config">Configurar novo bot</a>
+</body>
+</html>

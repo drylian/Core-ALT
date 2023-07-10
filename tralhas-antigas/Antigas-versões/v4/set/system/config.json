@@ -1,0 +1,12 @@
+{
+  "bot_token": "MTAwMDk4NjQ5NTcwNTk0ODIxMg.GfdF26.0lE56zXv3aDCjMTFTrDBZMnEcXsRd7AZLChtZQ",
+  "bot_client": "1000986495705948212",
+  "bot_client_secret": "VbiaXLXojaKP71lf3cyuoGTlB0arb-Iw",
+  "bot_callback_url": "http://localhost:3000/auth/login/api",
+  "web_name": "Core",
+  "web_port": "3000",
+  "web_url": "http://localhost",
+  "web_admin_id": [
+    "428660430412709889"
+  ]
+}

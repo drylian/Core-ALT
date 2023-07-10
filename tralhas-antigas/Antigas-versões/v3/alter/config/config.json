@@ -1,0 +1,13 @@
+{
+    "clientID":"1037076897919680532",
+    "clientSecret":"VbiaXLXojaKP71lf3cyuoGTlB0arb-Iw",
+    "callbackURL":"http://localhost:3000/login/api",
+    "Admin":["428660430412709889"],
+    "token":"MTAzNzA3Njg5NzkxOTY4MDUzMg.GXR7Xs.BJVzo_fFlP8gX9MvtkZYWgJ9J8_HvqhBJ1TkNI",
+    "prefix":"-",
+    "port":"3000",
+    "slashtype":"direct",
+    "status_desc":"Jogando Alternight.,Iniciando Core v2,Criado por Drylian",
+    "status_tempo":"50000"
+}
+

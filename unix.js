@@ -1,50 +1,18 @@
-/**
- * Alternight 2023 - Todos os direitos reservados.
- * configuração principal para carregar os arquivos do painel
- * Responsavel pelo gerenciamente, executação e todos os tipos de função.
- *
- */
-const colors = require('colors');
-const nodemon = require('nodemon');
-const argv = require('yargs')
-    .option('dev', {
-        alias: 'd',
-        describe: 'Execute modo Desenvolvimento.',
-        type: 'boolean',
-        default: false
-    }).argv;
+import Discord from 'discord.js';
+import intents from './scripts/components/intents'; // Supondo que você tenha o arquivo intents.ts na mesma pasta
 
-if (argv.dev) {
-    dev();
-} else {
-    console.log(`[${colors.cyan(' Core ')}] Está iniciando...`);
-    require('./src/alter/init');
-}
+const client = new Discord.Client({ 
+  intents: intents
+});
 
-function dev() {
-    console.log(`[${colors.cyan(' Core ')}] Iniciado em modo desenvolvimento.`);
+client.once('ready', () => {
+  console.log('Bot está online!');
+});
 
-    // Iniciar o nodemon para monitorar os arquivos
-    nodemon({
-        script: './src/alter/init.js',
-        watch: ['./src'], // Pastas que serão monitoradas
-        ignoreRoot: ['./src/alter/*'],
-        ignore: ['node_modules'], // Arquivos/pastas a serem ignorados
-    });
+client.on('message', (message) => {
+  if (message.content === '!ping') {
+    message.channel.send('Pong!');
+  }
+});
 
-    // Lidar com o reinício do servidor pelo nodemon
-    nodemon.on('restart', (files) => {
-        console.log(`[${colors.cyan(' Core ')}] Servidor reiniciado. Arquivos modificados:`, files);
-    });
-
-    // Lidar com possíveis erros durante a execução do nodemon
-    nodemon.on('error', (err) => {
-        console.error(`[${colors.cyan(' Core ')}] Erro ao executar o live-mode:`, err);
-    });
-
-    // Lidar com o fechamento do processo do nodemon
-    nodemon.on('quit', () => {
-        console.log(`[${colors.cyan(' Core ')}] Processo encerrado.`);
-        process.exit(); // Encerrar o processo principal quando o nodemon for encerrado
-    });
-}
+client.login('seu_token_do_discord');

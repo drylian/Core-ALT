@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo de Box</title>
+    <style>
+        .box-type-1 {
+            background-color: #F5F5F5;
+            /* Cor clara do box */
+            border-top: 4px solid green;
+            /* Linha verde no teto */
+            border-radius: 10px;
+        }
+
+        .box-type-1 .header {
+            border-radius: 7px 7px 0px 0px;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            place-items: center;
+            display: flex;
+        }
+
+        .box-type-1 .header h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .box-type-1 .header p {
+            margin: 0;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+
+        .box-type-1 .content {
+            display: flex;
+            border-radius: 0px 0px 7px 7px;
+            background-color: #8d8b8b;
+            padding: 10px;
+        }
+
+        .box-type-1 .content a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+
+        .form-box {
+            background-color: transparent;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .form-box h3 {
+            margin: 0;
+            margin-bottom: 5px;
+        }
+
+        .form-box p {
+            margin: 0;
+            margin-bottom: 5px;
+        }
+
+        .form-box input[type="text"],
+        .form-box select {
+            width: 100%;
+            margin-bottom: 5px;
+            padding: 5px;
+            border-radius: 4px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-type-1">
+        <div class="header">
+            <h2>Título</h2>
+            <p>Descrição</p>
+        </div>
+        <div class="content">
+            <div class="form-box">
+                <h3>Formulário de Texto</h3>
+                
+                <input type="text" placeholder="Digite algo">
+                <p>Descrição do Formulário de Texto</p>
+            </div>
+
+            <div class="form-box">
+                <h3>Formulário de Seleção</h3>
+                
+                <select>
+                    <option value="opcao1">Opção 1</option>
+                    <option value="opcao2">Opção 2</option>
+                    <option value="opcao3">Opção 3</option>
+                </select>
+                <p>Descrição do Formulário de Seleção</p>
+            </div>
+
+            <div class="form-box">
+                <h3>Formulário de Opção</h3>
+                
+                <label><input type="radio" name="opcao" value="radio1"> Opção 1</label>
+                <label><input type="radio" name="opcao" value="radio2"> Opção 2</label>
+                <label><input type="radio" name="opcao" value="radio3"> Opção 3</label>
+                <p>Descrição do Formulário de Opção</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

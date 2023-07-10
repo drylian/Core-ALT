@@ -1,0 +1,44 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js init
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\composer;C:\ffmpeg\bin;C:\Program Files\dotnet\;C:\Users\Drylian\AppData\Local\Microsoft\WindowsApps;C:\Users\Drylian\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Drylian\AppData\Local\GitHubDesktop\bin;C:\Users\Drylian\AppData\Roaming\npm;C:\Users\Drylian\AppData\Local\Yarn\bin;C:\Principal\php8-1;C:\Users\Drylian\AppData\Roaming\Composer\vendor\bin;C:\Users\Drylian\.dotnet\tools
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  18.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:137008:13)
+      at Interface.emit (node:events:513:28)
+      at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1131:18)
+      at ReadStream.onkeypress (node:internal/readline/interface:270:20)
+      at ReadStream.emit (node:events:513:28)
+      at emitKeys (node:internal/readline/utils:357:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+      at ReadStream.emit (node:events:513:28)
+      at addChunk (node:internal/streams/readable:324:12)
+
+npm manifest: 
+  {
+    "name": "core-alt",
+    "version": "13.0.0",
+    "description": "Core-alt, Um pouco mais fodido",
+    "main": "unix.js",
+    "author": "Drylian",
+    "license": "MIT",
+    "private": null
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

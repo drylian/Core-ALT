@@ -1,0 +1,628 @@
+[ JDB-Logs ] Field 'field' atualizado
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] Retornando o field 'field'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config não existe (SQLITE-CORE).
+[ JDB-Logs ] A tabela field não existe (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Nenhuma correspondência encontrada em 'field' para 'algo'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela undefined não existe (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "field" foi criada e salva no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config não existe (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'config' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "config" foi criada e salva no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'config' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "config" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'config' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "config" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'config' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "config" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'config' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "config" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'config' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "config" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'config' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "config" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'config' atualizado
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] Field 'field' atualizado
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] Retornando o field 'field'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] A tabela field foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Nenhuma correspondência encontrada em 'field' para 'algo'.
+[ JDB-Logs ] A tabela "field" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela undefined não existe (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'field' atualizado
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] Retornando o field 'field'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] A tabela field foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Nenhuma correspondência encontrada em 'field' para 'algo'.
+[ JDB-Logs ] A tabela "field" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela undefined não existe (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'field' atualizado
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] Retornando o field 'field'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] A tabela field foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Nenhuma correspondência encontrada em 'field' para 'algo'.
+[ JDB-Logs ] A tabela "field" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela undefined não existe (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'field' atualizado
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] Retornando o field 'field'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] A tabela field foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Nenhuma correspondência encontrada em 'field' para 'algo'.
+[ JDB-Logs ] A tabela "field" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela undefined não existe (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] Erro ao tentar carregar o field 'config'.
+[ JDB-Logs ] A tabela "field" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'field' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] A tabela "field" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'field' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela field foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'field'.
+[ JDB-Logs ] Nenhuma correspondência encontrada em 'field' para 'algo'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela undefined não existe (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "field" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'field' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela field foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'field'.
+[ JDB-Logs ] Nenhuma correspondência encontrada em 'field' para 'algo'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela undefined não existe (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "field" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'field' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela field foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'field'.
+[ JDB-Logs ] Nenhuma correspondência encontrada em 'field' para 'algo'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela undefined não existe (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] A tabela "field" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'field' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela field foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'field'.
+[ JDB-Logs ] Nenhuma correspondência encontrada em 'field' para 'algo'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela undefined não existe (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] A tabela "field" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'field' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela field foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'field'.
+[ JDB-Logs ] Nenhuma correspondência encontrada em 'field' para 'algo'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela undefined não existe (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] A tabela "field" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'field' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela field foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'field'.
+[ JDB-Logs ] Nenhuma correspondência encontrada em 'field' para 'algo'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela undefined não existe (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] A tabela "field" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'field' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela field foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'field'.
+[ JDB-Logs ] Nenhuma correspondência encontrada em 'field' para 'algo'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela undefined não existe (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] A tabela "field" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'field' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela field foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'field'.
+[ JDB-Logs ] Nenhuma correspondência encontrada em 'field' para 'algo'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela undefined não existe (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] A tabela "field" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'field' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela field foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'field'.
+[ JDB-Logs ] Nenhuma correspondência encontrada em 'field' para 'algo'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela undefined não existe (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] A tabela "field" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'field' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela field foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'field'.
+[ JDB-Logs ] Nenhuma correspondência encontrada em 'field' para 'algo'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela undefined não existe (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] A tabela "field" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'field' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela field foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'field'.
+[ JDB-Logs ] Nenhuma correspondência encontrada em 'field' para 'algo'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela undefined não existe (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "config" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'config' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "config" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'config' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "config" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'config' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "config" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'config' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "config" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'config' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "config" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'config' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "config" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'config' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] A tabela "field" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'field' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela field foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'field'.
+[ JDB-Logs ] Nenhuma correspondência encontrada em 'field' para 'algo'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela undefined não existe (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] A tabela "field" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'field' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela field foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'field'.
+[ JDB-Logs ] Nenhuma correspondência encontrada em 'field' para 'algo'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela undefined não existe (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "config" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'config' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "config" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'config' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "config" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'config' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "config" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'config' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "config" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'config' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "config" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'config' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "config" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'config' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "config" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'config' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] A tabela "field" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'field' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] A tabela field foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'field'.
+[ JDB-Logs ] Nenhuma correspondência encontrada em 'field' para 'algo'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela undefined não existe (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "discord" foi criada e salva no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'discord' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] A tabela "field" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] A tabela "temp" foi criada e salva no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'field' atualizado
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'temp' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] A tabela field foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'field'.
+[ JDB-Logs ] Nenhuma correspondência encontrada em 'field' para 'algo'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela undefined não existe (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "discord" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'discord' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] A tabela discord foi carregada (SQLITE-CORE).
+[ JDB-Logs ] A tabela temp foi carregada (SQLITE-CORE).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'discord'.
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'temp'.
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela discord foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'discord'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela temp foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'temp'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] A tabela "field" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] A tabela "temp" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'field' atualizado
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'temp' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] A tabela field foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'field'.
+[ JDB-Logs ] Nenhuma correspondência encontrada em 'field' para 'algo'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela undefined não existe (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "discord" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'discord' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] A tabela "field" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] A tabela "temp" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'field' atualizado
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'temp' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] A tabela field foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'field'.
+[ JDB-Logs ] Nenhuma correspondência encontrada em 'field' para 'algo'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela undefined não existe (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "discord" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'discord' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] A tabela "field" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] A tabela "temp" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'field' atualizado
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'temp' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] A tabela field foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'field'.
+[ JDB-Logs ] Nenhuma correspondência encontrada em 'field' para 'algo'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela undefined não existe (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "discord" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'discord' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] A tabela "field" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] A tabela "temp" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'field' atualizado
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'temp' atualizado
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela config foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'config'.
+[ JDB-Logs ] A tabela field foi carregada (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Retornando o field 'field'.
+[ JDB-Logs ] Nenhuma correspondência encontrada em 'field' para 'algo'.
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela undefined não existe (SQLITE-CORE).
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Conectado ao Banco de Dados (SQLite).
+[ JDB-Logs ] A tabela "discord" foi atualizada no banco de dados (SQLITE-CORE)
+[ JDB-Logs ] Desconectado do Banco de Dados (SQLite).
+[ JDB-Logs ] Field 'discord' atualizado

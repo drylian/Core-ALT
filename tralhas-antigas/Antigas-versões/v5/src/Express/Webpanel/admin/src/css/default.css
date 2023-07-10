@@ -1,0 +1,181 @@
+/* Estilos CSS gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+.container {
+    display: flex;
+}
+
+/* Estilos CSS para a sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #f1f1f1;
+    transition: margin-left 0.3s;
+    overflow-y: auto;
+}
+
+.sidebar.open {
+    margin-left: 0;
+}
+
+.sidebar.close {
+    margin-left: -250px;
+}
+
+.sidebar .logo-content {
+    display: flex;
+    margin: 0;
+    color: #fff;
+    background-color: #333;
+    align-items: center;
+    padding: 18.7px;
+}
+
+.sidebar .logo-content img {
+    width: 40px;
+    height: 60px;
+}
+
+.sidebar .logo-content h1 {
+    margin-left: 5px;
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+
+.sidebar .logo-content button {
+    display: none;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+}
+
+.sidebar i {
+    margin-right: 5px;
+}
+
+/* Estilos CSS para o conteúdo */
+.content {
+    flex-grow: 1;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+/* Estilos CSS para o cabeçalho */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.header button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+.theme-selector {
+    margin-left: auto;
+}
+
+.theme-selector label {
+    margin-right: 5px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.theme-selector select {
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+}
+
+.content-container {
+    flex-grow: 1;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+/* Estilo para remover as bordas padrão geradas por navegadores */
+a,
+button {
+    outline: none;
+}
+
+/* Estilo para o botão toggle */
+.toggle-button {
+    font-weight: bold;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        position: fixed;
+        height: 100vh;
+        background-color: #f1f1f1;
+        transition: margin-left 0.3s;
+        overflow-y: auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .sidebar .logo-content button {
+        display: contents;
+        margin-left: auto;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .sidebar.open {
+        margin-left: 0;
+    }
+
+    .sidebar.close {
+        margin-left: -250px;
+    }
+}

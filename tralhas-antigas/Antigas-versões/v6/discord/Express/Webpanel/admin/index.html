@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Painel Administrativo</title>
+  <link rel="stylesheet" href="./discord/css/default.css">
+  <link rel="stylesheet" href="./discord/css/default.css" id="theme">
+  <script src="./discord/js/site.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar close">
+      <div class="logo-content">
+        <h1>Dashboard</h1>
+        <button class="toggle-button-mobile">&#9776;</button>
+      </div>
+      <a href="./dashboard"><i class="material-icons">dashboard</i> Dashboard</a>
+      <a href="./slash"><i class="material-icons">home</i> Comandos Slash</a>
+      <a href="./bots"><i class="material-icons">shopping_cart</i> Eventos</a>
+      <a href="./valores"><i class="material-icons">person</i> Extras</a>
+      <a href="./clientes"><i class="material-icons">person</i> Automações</a>
+      <a href="./interfaces"><i class="material-icons">person</i> Interfaces Web</a>
+    </div>
+
+    <div class="content">
+      <div class="header">
+        <button class="toggle-button">&#9776;</button>
+        <h1 id="page-title">Dashboard</h1>
+        <div class="theme-selector">
+          <label for="theme-select">Tema</label>
+          <select id="theme-select" onchange="changeTheme(this.value)">
+            <option value="default">Padrão</option>
+            <option value="light">Claro</option>
+            <option value="dark">Escuro</option>
+            <option value="orange">Laranja</option>
+          </select>
+        </div>
+      </div>
+      <div class="content-container">
+        <!-- O conteúdo da página será carregado dinamicamente aqui -->
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
