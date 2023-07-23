@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + React Base</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module">
+    const response = await fetch(`/csrf-token`);
+    const { token, cookie } = await response.json();
+
+    document.cookie = `${cookie}=${token}; path=/`;
+  </script>
+  <script type="module" src="/Index.jsx"></script>
+</body>
+
+</html>
