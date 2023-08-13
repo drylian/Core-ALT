@@ -8,6 +8,7 @@ import { log } from './LogsController.mjs';
 import fileUpload from 'express-fileupload';
 import { config } from './ConfigController.mjs'
 import { CsrfController } from '../http/middleware/security/CsrfController.mjs'
+import RouterController from '../http/router/routerController.mjs'
 
 const app = express();
 
@@ -31,6 +32,9 @@ app.use(flash());
 
 // Initialize CSRF protection middleware
 await CsrfController(app)
+//Sistema de rotas
+app.use(RouterController)
+
 
 if (config.app_mode !== "production") {
     log('Aplicação em modo de desenvolvimento, iniciando...')
@@ -42,7 +46,7 @@ if (config.app_mode !== "production") {
 } else {
     log('O Servidor esta inciando...')
     const buildPath = path.join(__dirname, '../http/public');
-    
+
     // Rota para lidar com todas as outras requisições e redirecionar para o React
     app.get('*', (req, res) => {
         res.sendFile(path.join(buildPath, 'index.html'));

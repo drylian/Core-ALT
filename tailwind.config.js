@@ -5,8 +5,8 @@ import('tailwindcss').Config
  */
 export default {
   content: [
-    "./index.html",
-    "./resources/scripts/**/*.{js,ts,jsx,tsx}",
+    "./resources/index.html",
+    "./resources/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {},

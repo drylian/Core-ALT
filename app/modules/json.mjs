@@ -10,6 +10,14 @@ function json(local) {
 	return JSON.parse(existingData);
 }
 
+function jsonvl(local) {
+	if (fs.existsSync(local)) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
 function jsonsv(local, data) {
 	let existingData;
 
@@ -26,4 +34,4 @@ function jsonsv(local, data) {
 	fs.writeFileSync(local, jsonData);
 }
 
-export { json, jsonsv };
+export { json, jsonsv, jsonvl };

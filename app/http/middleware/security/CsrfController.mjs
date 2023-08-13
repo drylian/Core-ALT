@@ -2,15 +2,7 @@ import cookieParser from "cookie-parser";
 import CsrfConfig from "./Csrf-Forms/CsrfConfig.mjs";
 import { config } from "../../../controllers/ConfigController.mjs";
 
-// import path from "path";
-// import { fileURLToPath } from "url";
-// const __filename = fileURLToPath(import.meta.url);
-// const __dirname = path.dirname(__filename);
-
 async function CsrfController(app) {
-  // Essas configurações são apenas para teste de desenvolvimento local.
-  // Não os use na produção.
-  // Na produção, certifique-se de usar cors e capacete e ter a configuração adequada.
   const { invalidCsrfTokenError, generateToken, doubleCsrfProtection } = await CsrfConfig(config.csrf)
 
   /**
@@ -35,25 +27,23 @@ async function CsrfController(app) {
     });
   });
 
-  app.post(
-    "/protected_endpoint",
-    doubleCsrfProtection,
-    csrfErrorHandler,
-    (req, res) => {
-      console.log(req.body);
-      res.json({
-        protected_endpoint: "form processed successfully",
+  function AuthController(req, res, next) {
+    // Verifica se a chave de autorização está presente no cabeçalho da requisição
+    const authorizationKey = req.headers['authorization'];
+  
+    if (authorizationKey === 'sua_chave_de_autorizacao') {
+      // Se a chave de autorização estiver correta, você pode permitir que o código continue
+      console.log('Uso de token detectado! O código continuará sem proteção CSRF.');
+      next();
+    } else {
+      // Caso contrário, continue com a proteção CSRF normal
+      doubleCsrfProtection(req, res, () => {
+        csrfErrorHandler(null, req, res, next);
       });
     }
-  );
-
-  // Try with a HTTP client (is not protected from a CSRF attack)
-  app.post("/unprotected_endpoint", (req, res) => {
-    console.log(req.body);
-    res.json({
-      unprotected_endpoint: "form processed successfullyss",
-    });
-  });
+  }
+  
+  app.use(AuthController);
 }
 
 export {

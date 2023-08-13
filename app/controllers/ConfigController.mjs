@@ -1,5 +1,5 @@
 import folder from '../modules/folder.mjs';
-import { json, jsonsv } from '../modules/json.mjs';
+import { json, jsonsv,jsonvl} from '../modules/json.mjs';
 import { gen } from '../modules/gerate.mjs'
 import { Logs_ConfigController } from './extensions/Logs_ConfigController.mjs'
 import { Database_ConfigController } from './extensions/Database_ConfigController.mjs'
@@ -26,6 +26,7 @@ const config = (function () {
     const APP_URL = process.env.APP_URL || "http://localhost";
     const APP_PORT = process.env.APP_PORT || "3000";
     const APP_MODE = process.env.APP_MODE || "dev";
+    const APP_VERSION = process.env.APP_VERSION || "development";
 
     /**
      * Configurações do Csrf
@@ -57,6 +58,7 @@ const config = (function () {
     config.root = '.' + APP_ROOT
     config.url = APP_URL
     config.port = APP_PORT
+    config.version = APP_VERSION
     config.server = json('.' + APP_ROOT + '/server.json')
 
     const logs = {

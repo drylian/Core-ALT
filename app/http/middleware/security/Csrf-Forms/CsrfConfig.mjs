@@ -7,7 +7,7 @@ const CsrfConfig = async (csrf) => {
     cookieName: csrf.cookie_name,
     cookieOptions: { sameSite: csrf.samesite, secure: csrf.secure, signed: csrf.signed },
     size: csrf.size,
-    ignoredMethods: ["GET", "HEAD", "OPTIONS"],
+    ignoredMethods: ["HEAD", "OPTIONS"],
   });
 };
 

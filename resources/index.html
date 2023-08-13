@@ -4,17 +4,26 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite + React Base</title>
+  <title></title>
 </head>
 
 <body>
   <div id="root"></div>
   <script type="module">
     const response = await fetch(`/csrf-token`);
-    const { token, cookie } = await response.json();
-
-    document.cookie = `${cookie}=${token}; path=/`;
+    const { token } = await response.json();
+    const currentPath = window.location.pathname;
+    document.cookie = `X-XSRF-TOKEN=${token}; path=${currentPath}`;
+    const WebState = await fetch('/api/application/SiteConfiguration', {
+      headers: {
+        'X-XSRF-TOKEN': token
+      }
+    });
+    const { Website } = await WebState.json();
+    window.Website = Website;
+    window.Website.csrfToken = token;
   </script>
   <script type="module" src="/Index.jsx"></script>
 </body>
