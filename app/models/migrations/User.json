@@ -1,0 +1,35 @@
+{
+  "Migration": "User",
+  "Description": "Model para os usuários",
+  "Version": "1.4",
+  "Type": "@MergeModels",
+  "Configuractions": {
+    "id": {
+      "type": "DataTypes.INTEGER",
+      "primaryKey": "true",
+      "autoIncrement": "true"
+    },
+    "username": {
+      "type": "DataTypes.STRING",
+      "allowNull": "false"
+    },
+    "email": {
+      "type": "DataTypes.STRING"
+    },
+    "password": {
+      "type": "DataTypes.STRING",
+      "allowNull": "false"
+    },
+    "permissions": {
+      "type": "DataTypes.STRING",
+      "defaultValue": 1
+    },
+    "uuid": {
+      "type": "DataTypes.STRING",
+      "allowNull": "false"
+    },
+    "relember": {
+      "type": "DataTypes.STRING"
+    }
+  }
+}

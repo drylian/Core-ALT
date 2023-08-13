@@ -1,0 +1,26 @@
+{
+  "mode": "dev",
+  "server": {
+    "port": "3000",
+    "url": "http://localhost",
+    "title": "Core",
+    "csrf": {
+      "cookie_secret": "K6OdJGvVKtqLc1DokZbdEFaolRaswawFlu2TxJtHTqMWbIVgYm6KZExIcvCy1p0tPZThMn3xTzaXNckSX5ABBl3WNvIKuscXAqyQxZKfz3q7Ai8S7TOApJHSW2nINLWN",
+      "secret": "hloD2HfB09C6cuQxWISaQNPaQxtIYGiNULZom3ZYe2DhZLDLGezoRMgcv5yN8fOpHbuh60dnTENeUPcPXbAGMF3I7nYW6YM24rHzOIsjwx44vpdtAvocTUFHFEheLj3c",
+      "samesite": false,
+      "secure": false,
+      "signed": false,
+      "size": 64,
+      "ignoreroutes": ""
+    },
+    "session": "SgP6vkT2f2iAdibUXgkbFbsOAgeP5ac5P481mIfTXPMEhRQIn6vCiqTxyLMauNqKT7uWtuq926o9rWylXT1tJlUWCUoA5u3Z2hjlGoF6draS5Nw0naxHRYR5s7S5L2yI",
+    "cors": {
+      "allowedroutes": "http://localhost:3000,http://localhost:80,http://localhost:8080,http://127.0.0.1,http://127.0.0.1:8080,http://127.0.0.1:80"
+    },
+    "refreshTokenSecret": "refreshToken_Js3UZWyLHpPz4tDHwlohNEI7j23zdRXTtYbQozVRRK1Daw5HADypToHYsbSx44a4UWdhRZAVzrLq5MuP3jnt0uIvjh8MLexsw2Q1vy1hPvQdveTe3peS9rJsFTIoGFEQ",
+    "accessTokenSecret": "accessToken_YEIDdauzPFRPz0blkXY8YR2iujOTxfgz1eBqpYgdGwXMtGm2EB2ydXtCVHdqtZjJAg89EYJBKdEfCrMYLGkhXdpvKafAue2gDBkFyU3ofeDOr1OFNiWJvWrzA1p1jZ3D"
+  },
+  "database": {
+    "dialect": "sqlite"
+  }
+}

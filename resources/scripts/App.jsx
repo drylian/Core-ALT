@@ -1,28 +1,11 @@
-import { Outlet } from 'react-router-dom'
-import ErrorBoundary from './webpages/errors/ErrorBoundary.jsx'
-import { store } from './states';
-import { StoreProvider } from 'easy-peasy';
-import ProgressBar from './components/elements/ProgressBar.jsx';
+import React from 'react';
+import RouterController from "./routes/RouterController.jsx"
+import { AuthProvider } from './contexts/AuthContext.jsx';
 
-
-function App() {
-    const Website = window.Website;
-
-    if (Website && !store.getState().website.data) {
-        store.getActions().website.setWebsite(Website)
-    }
-
-    return (
-        <>
-            <StoreProvider store={store}>
-                <ProgressBar>
-                    <ErrorBoundary>
-                        <Outlet />
-                    </ErrorBoundary>
-                </ProgressBar>
-            </StoreProvider>
-        </>
-    )
+export default function App() {
+  return (
+    <AuthProvider>
+        <RouterController />
+    </AuthProvider>
+  );
 }
-
-export default App

@@ -1,13 +1,29 @@
-import { config } from 'dotenv';
-import { dev } from "./app/init/dev.mjs"
+import Settings from "./app/controllers/settings.mjs";
+import core from "./app/controllers/loggings.mjs";
 
-await import('./app/controllers/ExportController.js')
-// Carrega as variáveis de ambiente do arquivo .env
-config();
+core.sys("Iniciando processos do painel.")
 
-const APP_MODE = process.env.APP_MODE || "dev";
-if(APP_MODE === "dev") {
-    dev()
-} else {
-    await import("./app/init/init.mjs")
+async function init() {
+    const { db } = await import("./app/controllers/sequelize.mjs")
+    await db.init();
+
+    await import('./app/backend.mjs')
+
+    const { webpanel } = await import('./app/controllers/express.mjs')
+
+    await webpanel()
+    // core.log('Teste')
+    // core.debug('teste')
+    // core.err('teste')
+    // core.warn('teste')
+    core.sys("Sistema iniciado com sucesso.")
 }
+console.log()
+await Settings()
+    .then(async () => {
+        // Ok , settings esta configurado
+        await init()
+    })
+    .catch((erro) => {
+        core.sys("Erro ao tentar configurar o painel: " + erro.stack)
+    });

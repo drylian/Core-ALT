@@ -1,16 +1,13 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import RouterController from './scripts/routers/RouterController'
-import './index.css'
-import { setConfig } from 'react-hot-loader';
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import './index.css';
+import 'boxicons/css/boxicons.min.css'
+import App from './scripts/App.jsx';
 
-
-setConfig({ reloadHooks: false });
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-    <>
-        <React.StrictMode>
-                <RouterController />
-        </React.StrictMode>,
-    </>
-)
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(
+  <React.StrictMode>
+        <App />
+  </React.StrictMode>
+);

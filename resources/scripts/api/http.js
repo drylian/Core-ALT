@@ -1,59 +1,56 @@
 import axios from 'axios';
-import { store } from '../states';
+import { FlashContext } from '../contexts/FlashContext.jsx';
 
 const http = axios.create({
-    // baseURL: "https://jsonplaceholder.typicode.com",
-    baseURL: "",
-    withCredentials: true,
-    timeout: 20000,
-    headers: {
-        'X-Requested-With': 'XMLHttpRequest',
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-        'X-XSRF-TOKEN': window.Website.csrfToken,
-    },
-});
-
-http.interceptors.request.use((req) => {
-    store.getActions().progress.startContinuous();
-    return req;
+  withCredentials: true,
+  timeout: 20000,
+  headers: {
+    Accept: 'application/json',
+    'Content-Type': 'application/json',
+  },
 });
 
 http.interceptors.response.use(
-    (resp) => {
-        store.getActions().progress.setComplete();
+  (response) => {
+    const { setAlert } = FlashContext();
 
-        return resp;
-    },
-    (error) => {
-        store.getActions().progress.setComplete();
-
-        throw error;
+    if (response?.data && response?.data?.type) {
+      if (typeof error?.response?.data === 'string') {
+        setAlert('warn', error?.response?.data);
+      } else if (response?.data?.type.toLowerCase() === 'success') {
+        setAlert('success', response?.data?.message || 'Operação concluída com sucesso.');
+      } else if (response?.data?.type.toLowerCase() === 'info') {
+        setAlert('info', response?.data?.message || 'Informação recebida.');
+      } else if (response?.data?.type.toLowerCase() === 'warn') {
+        setAlert('warn', response?.data?.message || 'Aviso recebido.');
+      } else {
+        setAlert('info', response?.data?.message || 'Informação recebida.');
+      }
     }
+
+    return response;
+  },
+  (error) => {
+    const { setAlert } = useMessageContext();
+
+    if (error?.response) {
+      if (typeof error?.response?.data === 'string') {
+        setAlert('error', error?.response?.data);
+      } else if (error?.response?.data && error?.response?.data?.message) {
+        setAlert('error', error?.response?.data?.message);
+      } else {
+        setAlert('error', 'Um erro desconhecido ocorreu.');
+      }
+
+      if (typeof error?.response?.statusText === 'string') {
+        setAlert('error', error?.response?.statusText);
+      }
+    } else {
+      setAlert('error', 'Um erro desconhecido ocorreu.');
+    }
+
+    return Promise.reject(error);
+  }
 );
 
 export default http;
-
-export function FlashError(error) {
-    if (error.response && error.response.data) {
-        let { data } = error.response;
-
-        if (typeof data === 'string') {
-            try {
-                data = JSON.parse(data);
-            } catch (e) {
-                // nada, Json quebrado
-            }
-        }
-
-        if (data.errors && data.errors[0] && data.errors[0].detail) {
-            return data.errors[0].detail;
-        }
-
-        if (data.error && typeof data.error === 'string') {
-            return data.error;
-        }
-    }
-
-    return error.message;
-}
