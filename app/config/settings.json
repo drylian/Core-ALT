@@ -3,7 +3,7 @@
   "server": {
     "port": "3000",
     "url": "http://localhost",
-    "title": "Core",
+    "title": "Alternight",
     "csrf": {
       "cookie_secret": "K6OdJGvVKtqLc1DokZbdEFaolRaswawFlu2TxJtHTqMWbIVgYm6KZExIcvCy1p0tPZThMn3xTzaXNckSX5ABBl3WNvIKuscXAqyQxZKfz3q7Ai8S7TOApJHSW2nINLWN",
       "secret": "hloD2HfB09C6cuQxWISaQNPaQxtIYGiNULZom3ZYe2DhZLDLGezoRMgcv5yN8fOpHbuh60dnTENeUPcPXbAGMF3I7nYW6YM24rHzOIsjwx44vpdtAvocTUFHFEheLj3c",
@@ -22,5 +22,10 @@
   },
   "database": {
     "dialect": "sqlite"
+  },
+  "namespaces": {
+    "settings": "ab73d9cd-8482-4149-b5fe-dd208b471745",
+    "tokens": "cc8b97bc-a832-4177-ad18-fd6031543d4f",
+    "users": "c1245b20-cf2e-4056-8ae3-9599d36d62e4"
   }
 }

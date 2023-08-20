@@ -4,14 +4,14 @@ import FlashAlert from '../components/elements/FlashAlert.jsx';
 const FlashContext = createContext();
 
 const FlashProvider = ({ children }) => {
-    const [alert, setAlert] = useState(null);
+    const [alert, setAlert] = useState("");
 
     const setFlash = (type, message) => {
         setAlert({ type, message });
-    };
+    };    
 
     const clearAlert = () => {
-        setAlert(null);
+        setAlert("");
     };
 
     return (

@@ -6,6 +6,7 @@ import { gen } from "../utils/gerate.mjs";
 const core = (level, message) => controller[level]("Settings", message, "magenta");
 
 import question from "../utils/question.mjs";
+import { genv4 } from "../utils/uuidGen.mjs";
 
 async function Settings() {
 	try {
@@ -72,7 +73,12 @@ async function Settings() {
 			core("sys", "Não foi possivel encontrar o arquivo de configuração do settings, criando.");
 		}
 		let c = json(root.configPATH + "/settings.json");
+
+
 		if (!c?.mode) jsonsv(root.configPATH + "/settings.json", { mode: "dev" });
+		if (!c?.namespaces?.users) jsonsv(root.configPATH + "/settings.json", { namespaces: { users: genv4()} });
+		if (!c?.namespaces?.settings) jsonsv(root.configPATH + "/settings.json", { namespaces: { settings: genv4()} });
+		if (!c?.namespaces?.tokens) jsonsv(root.configPATH + "/settings.json", { namespaces: { tokens: genv4()} });
 		if (!c?.server?.port) jsonsv(root.configPATH + "/settings.json", { server: { port: await qprefix("server_port") } });
 		if (!c?.server?.url) jsonsv(root.configPATH + "/settings.json", { server: { url: await qprefix("server_url") } });
 		if (!c?.server?.title) jsonsv(root.configPATH + "/settings.json", { server: { title: await qprefix("server_title") } });

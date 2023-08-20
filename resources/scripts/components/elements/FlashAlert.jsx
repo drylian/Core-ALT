@@ -4,7 +4,7 @@ const FlashAlert = ({ type, message, onClose }) => {
   const [isClosed, setIsClosed] = useState(false);
 
   let alertClasses = 'p-2 mb-2 rounded ';
-  
+
   if (type === 'error') {
     alertClasses += 'bg-red-500 text-white';
   } else if (type === 'success') {
@@ -23,12 +23,16 @@ const FlashAlert = ({ type, message, onClose }) => {
   };
 
   return (
-    <div className={alertClasses} style={{ display: isClosed ? 'none' : 'block' }}>
-      {message}
-      <button onClick={handleClose} className="ml-2">
-        Fechar
-      </button>
-    </div>
+    <>
+      {message && (
+        <div className={alertClasses} style={{ display: isClosed ? 'none' : 'block' }}>
+          {message}
+          <button onClick={handleClose} className="ml-2">
+            Fechar
+          </button>
+        </div>
+      )}
+    </>
   );
 };
 

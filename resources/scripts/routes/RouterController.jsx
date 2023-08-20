@@ -17,12 +17,15 @@ import Register from '../pages/auth/Register.jsx';
 import Missing from '../pages/errors/Missing.jsx';
 import Loading from '../components/elements/Layout.jsx';
 
+// Paginas Livres '../pages/root'
+import Home from '../pages/root/Home.jsx';
+
 export default function RouterController() {
   return (
     <BrowserRouter history={history}>
       <Routes>
         <Route path="/" element={<Layout />}>
-          {/* <Route exact path="/home" element={<RequireAuth Protected={1} component={Home} />} /> */}
+          <Route exact path="/" element={< Home/>} />
           <Route exact path="/auth/login/" element={<RequireAuth component={Login} />} />
           <Route exact path="/auth/register" element={<RequireAuth component={Register} />} />
           <Route exact path="/client/*" element={<RequireAuth Protected={1} component={ClientController} />} />

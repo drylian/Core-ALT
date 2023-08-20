@@ -15,9 +15,9 @@ const RequireAuth = ({ Protected, component: Component, ...props }) => {
   return (loading ? <Loading /> :
     Protected && !UserLevel ? <Navigate to="/auth/login" /> :
       UserLevel >= Protected ? (
-        <Unauthorized />
-      ) : (
         <Component {...props} />
+      ) : (
+        <Unauthorized />
       )
 
   );

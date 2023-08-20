@@ -1,6 +1,6 @@
 /**
  * SequelizeController Migrations
- * Controlador de todos os Migrations gerados em 12/ago./2023 19:30:09
+ * Controlador de todos os Migrations gerados em 16/ago./2023 22:55:05
  * Total de Migrations = 2
  */
 
@@ -75,7 +75,7 @@ const User = () => {
         type: DataTypes.STRING,
         allowNull: false,
       },
-      relember: {
+      remember: {
         type: DataTypes.STRING,
       },
  })

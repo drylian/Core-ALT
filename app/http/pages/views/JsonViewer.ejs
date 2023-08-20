@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Visualizador de JSON</title>
+    <title><%= responseData.Website.title %> - Visualizador de JSON</title>
     <style>
         /* Estilos para a formatação do JSON */
         body {
@@ -64,7 +64,7 @@
 <body>
     <div class="container">
         <img src="https://cdn.discordapp.com/attachments/1033486312956768336/1086420783477297203/logo-alternight.png" alt="Minha Imagem">    
-        <h1>Meu Título</h1>
+        <h1><%= responseData.Website.title %> - Api Viewer</h1>
     </div>
     <pre><code id="json"></code></pre>
 

@@ -6,7 +6,7 @@ const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
   const {
-    UserLevel, loading, handleLogin, handleLogout, handleRegister
+    UserLevel, loading, handleLogin, handleLogout
   } = useAuth();
 
   return (

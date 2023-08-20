@@ -23,3 +23,6 @@ pnpm-lock.yaml
 *.njsproj
 *.sln
 *.sw?
+
+# vite-express cache
+vite.config.js.timestamp*

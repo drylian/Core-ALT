@@ -2,27 +2,21 @@
  * Rotas da Area Administrativa.
  */
 import React from "react";
-import { useRoutes } from "react-router-dom";
-import Teste from '../pages/admin/teste.jsx'
+import { Route, Routes } from "react-router-dom";
 import RequireAuth from '../components/auth/RequireAuth.jsx';
+import Teste from '../pages/admin/teste.jsx';
 
 const AdminController = () => {
-  const element = useRoutes([
-    {
-      path: "/",
-      element: <RequireAuth Protected={1} component={Teste} />
-    },
-    {
-      path: "/users",
-      element: <Teste />,
-    },
-    {
-      path: "/settings",
-      element: <Teste />,
-    },
-  ]);
-
-  return element;
+  return (
+    <>
+      <Routes>
+        <Route path="" element={<RequireAuth Protected={1} component={Teste} />} />
+        <Route path="users" element={<RequireAuth Protected={1} component={Teste} />} />
+        <Route path="settings" element={<RequireAuth Protected={1} component={Teste} />} />
+      </Routes>
+    </>
+  );
 };
 
 export default AdminController;
+

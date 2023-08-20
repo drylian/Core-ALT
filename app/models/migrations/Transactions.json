@@ -1,15 +1,15 @@
 {
     "Migration":"Transactions",
-    "Description":"Template de Model",
+    "Description":"Loggings",
     "Version":"1.0",
     "Type":"@MergeModels",
     "Configuractions":{
-        "source": "DataTypes.INTEGER",
-        "given_by": "DataTypes.STRING",
-        "received_by": "DataTypes.STRING",
-        "given_by_tag": "DataTypes.STRING",
-        "received_by_tag": "DataTypes.STRING",
-        "given_at": "DataTypes.BIGINT",
-        "amount": "DataTypes.INTEGER"
+        "source": "INTEGER",
+        "given_by": "STRING",
+        "received_by": "STRING",
+        "given_by_tag": "STRING",
+        "received_by_tag": "STRING",
+        "given_at": "BIGINT",
+        "amount": "INTEGER"
     }
 }

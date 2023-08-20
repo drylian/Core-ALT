@@ -1,7 +1,6 @@
 import path from "path";
 import express from "express";
 import flash from "connect-flash";
-import cors from "cors";
 
 import { fileURLToPath } from "url";
 import session from "express-session";
@@ -12,7 +11,7 @@ import configuractions from "./settings/Default.mjs";
 import Routers from "../http/Routers.mjs";
 import { json } from "../utils/json.mjs";
 import credentials from "./express/credentials.mjs";
-import cors_options from "./express/cors_options.mjs";
+import CorsOptions from "./express/CorsOptions.mjs";
 
 const core = (level, message) => controller[level]("Express", message, "gray");
 
@@ -32,8 +31,7 @@ export const webpanel = async () => {
 		// e buscar requisitos de credenciais de cookies
 		app.use(credentials);
 
-		// Cross Origin Resource Sharing
-		app.use(cors(cors_options));
+		await CorsOptions(app)
 
 		// Carrega o ejs , para fins de depuração.
 		app.set("view engine", "ejs");

@@ -28,7 +28,7 @@
       "type": "DataTypes.STRING",
       "allowNull": "false"
     },
-    "relember": {
+    "remember": {
       "type": "DataTypes.STRING"
     }
   }

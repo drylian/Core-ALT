@@ -8,9 +8,6 @@ export default function useAuth() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    /**
-     * Async Raiz, usado para todos os tipos de codigos
-     */
     (async () => {
       
       const token = localStorage.getItem('token');

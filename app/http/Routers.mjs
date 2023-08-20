@@ -1,5 +1,7 @@
 import { CsrfProtection } from "./middlewares/csrf-csrf.mjs";
-import imagem from "./routes/image.mjs";
+import imagemRoute from "./routes/image.mjs";
+import ApplicationRoute from "./routes/api/application.mjs";
+
 import authenticateRoute from "./routes/auth/authenticate.mjs";
 import LoginRoute from "./routes/auth/login.mjs";
 import RegisterRoute from "./routes/auth/register.mjs";
@@ -13,7 +15,8 @@ export default async function Routers(app) {
 	/**
 	 * Visualizador de imagem
 	 */
-	app.use("/", imagem);
+	app.use("/", imagemRoute);
+	app.use("/api/application", ApplicationRoute);
 	app.use("/auth/authenticate", authenticateRoute);
 	app.use("/auth/login", LoginRoute)
 	app.use("/auth/register", RegisterRoute)

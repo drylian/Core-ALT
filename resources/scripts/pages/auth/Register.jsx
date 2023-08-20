@@ -1,10 +1,11 @@
 import { useRef, useState, useEffect } from 'react';
-import useAuth from '../../contexts/hooks/useAuth.jsx';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import http from '../../api/http';
+import useConfig from '../../contexts/hooks/useConfig';
 
 const Login = () => {
-    const { handleLogin } = useAuth();
+    const { website } = useConfig();
+
     const navigate = useNavigate();
     const location = useLocation();
     const from = location.state?.from?.pathname || "/";
@@ -77,7 +78,7 @@ const Login = () => {
     return (
         <div className="flex items-center justify-center h-screen bg-gray-100">
             <div className="bg-white p-8 shadow-lg rounded-2xl">
-                <h2 className="text-2xl font-semibold mb-4 text-center">Registro da Alternight</h2>
+                <h2 className="text-2xl font-semibold mb-4 text-center">Area de Registro - {!website ? "Core" : website.title}</h2>
                 <p ref={errRef} className={`mb-4 ${errMsg ? 'text-red-600' : 'hidden'}`} aria-live="assertive">{errMsg}</p>
 
                 <form onSubmit={handleSubmit}>

@@ -1,8 +1,7 @@
 import React, { useContext } from "react"
-import { FlashProvider } from "../contexts/FlashContext.jsx"
 import { WebsiteContext } from "../contexts/WebsiteContext.jsx";
 
-const ContentBox = (props) => {
+const GlobalBox = (props) => {
     const { website } = useContext(WebsiteContext);
     const { title, children } = props
 
@@ -11,11 +10,9 @@ const ContentBox = (props) => {
 
     return (
         <div className="relative overflow-hidden">
-            <FlashProvider>
-                {children}
-            </FlashProvider>
+            {children}
         </div>
     )
 }
 
-export default ContentBox
+export default GlobalBox

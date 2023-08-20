@@ -1,16 +1,14 @@
 import express from 'express';
-import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 import { db } from '../../../controllers/sequelize.mjs';
 import { controller } from '../../../controllers/loggings.mjs';
 const core = (level, message) => controller[level]("Express-WEB", message, "gray");
-import { json } from '../../../utils/json.mjs';
-import configuractions from "../../../controllers/settings/Default.mjs"
+import { genv5 } from '../../../utils/uuidGen.mjs';
+
 const router = express.Router();
 
 // Rota de registro
 router.post('/', async (req, res) => {
-    const config = json(configuractions.configPATH + "/settings.json")
     const { name, email, password } = req.body;
     const User = db.User();
 
@@ -29,13 +27,13 @@ router.post('/', async (req, res) => {
             username: name,
             email,
             password: hashedPassword,
+            uuid: genv5(email, "users")
         });
+
+
         core("log", `Novo usuário foi criado : "${newUser.username}"`)
 
-        // Cria um token JWT para o novo usuário
-        const token = jwt.sign({ id: newUser.id, email: newUser.email }, config.server.accessTokenSecret);
-
-        return res.json({ user: newUser, token });
+        return res.json({ message: "Sucesso ao criar o usuário", ...newUser });
     } catch (error) {
         core("err", `Erro ao tentar registrar um usuário : "${error.stack}"`)
         return res.status(500).json({ message: 'Erro ao registrar' });
