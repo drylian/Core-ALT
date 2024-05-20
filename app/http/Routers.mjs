@@ -11,7 +11,7 @@ export default async function Routers(app) {
 	/**
 	 * Carrega a proteção CSRF no painel
 	 */
-	await CsrfProtection(app);
+	// await CsrfProtection(app);
 	/**
 	 * Visualizador de imagem
 	 */

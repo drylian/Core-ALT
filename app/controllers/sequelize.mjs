@@ -17,13 +17,17 @@ const __dirname = path.dirname(__filename);
 
 const respose = json(Configuractions.configPATH + "/settings.json");
 
-if(config.mode !== "production") {
-	// Armazena o conteúdo gerado pelo sistema em um arquivo bruto
+// if(config.mode !== "production") {
+// 	// Armazena o conteúdo gerado pelo sistema em um arquivo bruto
+// fs.writeFileSync(
+// 	path.join(__dirname, "sequelize/controllers/results/MigrationController.mjs"),
+// 	await GenerateMigrations()
+// );
+// }
 fs.writeFileSync(
 	path.join(__dirname, "sequelize/controllers/results/MigrationController.mjs"),
 	await GenerateMigrations()
 );
-}
 // Combina as configurações do banco de dados com a opção de logging personalizado
 const sequelizeMG = {
 	...respose.database,

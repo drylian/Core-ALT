@@ -1,46 +1,10 @@
 /**
  * SequelizeController Migrations
- * Controlador de todos os Migrations gerados em 16/ago./2023 22:55:05
- * Total de Migrations = 2
+ * Controlador de todos os Migrations gerados em 19/mar./2024 22:05:30
+ * Total de Migrations = 1
  */
 
 function Migrations() {
-/**
- * Function Gerada pelo SequelizeController.
- * Json Migration "Transactions" convertido para função. 
- * Migration Versão: 1.0
- * Migration Descrição: Template de Model
- * Migration Tipo: @MergeModels
- */
-
-const Transactions = () => {
-  const TransactionsContent = sequelize.define('Transactions', {
-      source: {
-        type: DataTypes.INTEGER,
-      },
-      given_by: {
-        type: DataTypes.STRING,
-      },
-      received_by: {
-        type: DataTypes.STRING,
-      },
-      given_by_tag: {
-        type: DataTypes.STRING,
-      },
-      received_by_tag: {
-        type: DataTypes.STRING,
-      },
-      given_at: {
-        type: DataTypes.BIGINT,
-      },
-      amount: {
-        type: DataTypes.INTEGER,
-      },
- })
-  return TransactionsContent;
-};
-
-
 /**
  * Function Gerada pelo SequelizeController.
  * Json Migration "User" convertido para função. 
@@ -83,5 +47,5 @@ const User = () => {
 };
 
 
-  return { Transactions, User };
+  return { User };
 }

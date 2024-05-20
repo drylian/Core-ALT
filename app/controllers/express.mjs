@@ -31,7 +31,7 @@ export const webpanel = async () => {
 		// e buscar requisitos de credenciais de cookies
 		app.use(credentials);
 
-		await CorsOptions(app)
+		// await CorsOptions(app)
 
 		// Carrega o ejs , para fins de depuração.
 		app.set("view engine", "ejs");

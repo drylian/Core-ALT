@@ -25,7 +25,6 @@ const core = {
 		log(level, message, color);
 	},
 };
-
 const controller = {
 	log(controller, message, color) {
 		controllers(controller, message, color, "Info");
